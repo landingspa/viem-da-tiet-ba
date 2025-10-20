@@ -1,0 +1,82 @@
+[
+  {
+    "id": "1",
+    "name": "Nguyễn Thị Mai",
+    "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200",
+    "rating": 5,
+    "date": "2025-01-15",
+    "service": "Uốn tóc + Nhuộm Balayage",
+    "comment": "Salon rất chuyên nghiệp! Chị Minh Châu tư vấn tận tình, màu tóc đẹp tự nhiên. Không gian sang trọng, sạch sẽ. Sẽ quay lại lần sau!",
+    "image": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=400"
+  },
+  {
+    "id": "2",
+    "name": "Trần Minh Khoa",
+    "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200",
+    "rating": 5,
+    "date": "2025-01-10",
+    "service": "Cắt tóc nam Fade",
+    "comment": "Anh Tuấn Anh cắt tóc rất đỉnh! Kiểu fade sắc nét, đúng ý mình muốn. Giá hợp lý, phục vụ nhiệt tình. Recommend cho ae!",
+    "image": "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=400"
+  },
+  {
+    "id": "3",
+    "name": "Lê Hoàng Anh",
+    "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200",
+    "rating": 5,
+    "date": "2025-01-08",
+    "service": "Phục hồi tóc hư tổn",
+    "comment": "Tóc mình hư nặng do nhuộm nhiều, sau 3 lần điều trị ở đây tóc đã mềm mượt trở lại. Chị Thanh Tâm massage rất relax. Cảm ơn team!",
+    "image": ""
+  },
+  {
+    "id": "4",
+    "name": "Phạm Đức Thắng",
+    "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200",
+    "rating": 5,
+    "date": "2025-01-05",
+    "service": "Textured Crop",
+    "comment": "Lần đầu cắt ở HairZone, ấn tượng với không gian và dịch vụ. Anh barber tư vấn kỹ, cắt chỉn chu. Tóc giữ form lâu. 5 sao!",
+    "image": "https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=400"
+  },
+  {
+    "id": "5",
+    "name": "Võ Thanh Hà",
+    "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200",
+    "rating": 5,
+    "date": "2025-01-03",
+    "service": "Bob ngắn + Nhuộm",
+    "comment": "Mình đã tìm được salon ưng ý! Từ tư vấn đến tạo kiểu đều perfect. Giá hơi cao nhưng xứng đáng. Không gian đẹp, nhân viên dễ thương!",
+    "image": "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=400"
+  },
+  {
+    "id": "6",
+    "name": "Ngô Minh Tuấn",
+    "avatar": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=200",
+    "rating": 4,
+    "date": "2024-12-28",
+    "service": "Pompadour Classic",
+    "comment": "Salon đẹp, stylist giỏi. Cắt tóc pompadour rất chuẩn. Chỉ có điều phải đợi hơi lâu vì đông khách. Nhưng vẫn đáng để chờ!",
+    "image": ""
+  },
+  {
+    "id": "7",
+    "name": "Đỗ Thị Lan",
+    "avatar": "https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=200",
+    "rating": 5,
+    "date": "2024-12-25",
+    "service": "Tạo kiểu dự tiệc",
+    "comment": "Làm tóc cho tiệc cưới bạn thân. Stylist làm rất đẹp, giữ form suốt buổi tiệc. Được nhiều người khen. Cảm ơn HairZone!",
+    "image": "https://images.unsplash.com/photo-1595475884562-073c30d45670?w=400"
+  },
+  {
+    "id": "8",
+    "name": "Bùi Văn Nam",
+    "avatar": "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=200",
+    "rating": 5,
+    "date": "2024-12-20",
+    "service": "Combo Cắt + Gội + Uốn",
+    "comment": "Đặt combo giảm 30% rất đáng. Từ cắt đến uốn đều cẩn thận. Tóc ra đúng như mong muốn. Sẽ giới thiệu bạn bè!",
+    "image": ""
+  }
+]

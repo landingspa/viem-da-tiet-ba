@@ -1,0 +1,182 @@
+[
+  {
+    "id": "1",
+    "category": "female",
+    "style": "korean-wave",
+    "occasion": "daily",
+    "title": "Uốn Sóng Hàn Quốc",
+    "image": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800",
+    "thumbnail": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=400",
+    "description": "Kiểu tóc uốn sóng tự nhiên theo phong cách Hàn Quốc"
+  },
+  {
+    "id": "2",
+    "category": "female",
+    "style": "straight",
+    "occasion": "daily",
+    "title": "Tóc Dài Suôn Mượt",
+    "image": "https://images.unsplash.com/photo-1560869713-7d0a29430803?w=800",
+    "thumbnail": "https://images.unsplash.com/photo-1560869713-7d0a29430803?w=400",
+    "description": "Tóc dài được chăm sóc kỹ càng, suôn mượt tự nhiên"
+  },
+  {
+    "id": "3",
+    "category": "male",
+    "style": "fade",
+    "occasion": "daily",
+    "title": "Fade Undercut",
+    "image": "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=800",
+    "thumbnail": "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=400",
+    "description": "Kiểu tóc nam hiện đại với fade sắc nét và undercut cá tính"
+  },
+  {
+    "id": "4",
+    "category": "male",
+    "style": "textured",
+    "occasion": "daily",
+    "title": "Textured Crop",
+    "image": "https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=800",
+    "thumbnail": "https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=400",
+    "description": "Tóc nam phong cách với lớp textured tạo độ phồng tự nhiên"
+  },
+  {
+    "id": "5",
+    "category": "female",
+    "style": "balayage",
+    "occasion": "daily",
+    "title": "Balayage Vàng Ánh Kim",
+    "image": "https://images.unsplash.com/photo-1562322140-8baeececf3df?w=800",
+    "thumbnail": "https://images.unsplash.com/photo-1562322140-8baeececf3df?w=400",
+    "description": "Nhuộm balayage với tông vàng ánh kim sang trọng"
+  },
+  {
+    "id": "6",
+    "category": "female",
+    "style": "bob",
+    "occasion": "office",
+    "title": "Bob Ngắn Cá Tính",
+    "image": "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=800",
+    "thumbnail": "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=400",
+    "description": "Kiểu bob ngắn hiện đại, phù hợp công sở và dạo phố"
+  },
+  {
+    "id": "7",
+    "category": "female",
+    "style": "layer",
+    "occasion": "daily",
+    "title": "Layer Tự Nhiên",
+    "image": "https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?w=800",
+    "thumbnail": "https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?w=400",
+    "description": "Tóc layer nhiều tầng tạo độ phồng và chuyển động tự nhiên"
+  },
+  {
+    "id": "8",
+    "category": "male",
+    "style": "pompadour",
+    "occasion": "office",
+    "title": "Modern Pompadour",
+    "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800",
+    "thumbnail": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400",
+    "description": "Pompadour hiện đại kết hợp undercut, phong cách lịch lãm"
+  },
+  {
+    "id": "9",
+    "category": "female",
+    "style": "updo",
+    "occasion": "wedding",
+    "title": "Tóc Cô Dâu Sang Trọng",
+    "image": "https://images.unsplash.com/photo-1595475884562-073c30d45670?w=800",
+    "thumbnail": "https://images.unsplash.com/photo-1595475884562-073c30d45670?w=400",
+    "description": "Kiểu tóc cô dâu đẹp, sang trọng cho ngày cưới"
+  },
+  {
+    "id": "10",
+    "category": "female",
+    "style": "ombre",
+    "occasion": "party",
+    "title": "Ombre Pastel",
+    "image": "https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=800",
+    "thumbnail": "https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=400",
+    "description": "Nhuộm ombre với tông pastel nhẹ nhàng, thời trang"
+  },
+  {
+    "id": "11",
+    "category": "female",
+    "style": "highlights",
+    "occasion": "daily",
+    "title": "Highlight Vàng Rực Rỡ",
+    "image": "https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=800",
+    "thumbnail": "https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=400",
+    "description": "Highlight tạo điểm nhấn sáng, phù hợp mùa hè"
+  },
+  {
+    "id": "12",
+    "category": "male",
+    "style": "side-part",
+    "occasion": "office",
+    "title": "Side Part Classic",
+    "image": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=800",
+    "thumbnail": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=400",
+    "description": "Kiểu tóc side part lịch lãm cho phong cách công sở"
+  },
+  {
+    "id": "13",
+    "category": "female",
+    "style": "curly",
+    "occasion": "party",
+    "title": "Tóc Xoăn Bồng Bềnh",
+    "image": "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=800",
+    "thumbnail": "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=400",
+    "description": "Tóc xoăn tự nhiên, bồng bềnh cho dịp tiệc tùng"
+  },
+  {
+    "id": "14",
+    "category": "female",
+    "style": "shag",
+    "occasion": "daily",
+    "title": "Shag Trendy",
+    "image": "https://images.unsplash.com/photo-1582095133179-bfd08e2fc6b3?w=800",
+    "thumbnail": "https://images.unsplash.com/photo-1582095133179-bfd08e2fc6b3?w=400",
+    "description": "Kiểu shag đang hot trend với tầng cắt bất đối xứng"
+  },
+  {
+    "id": "15",
+    "category": "male",
+    "style": "buzzcut",
+    "occasion": "daily",
+    "title": "Buzz Cut Cá Tính",
+    "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800",
+    "thumbnail": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400",
+    "description": "Buzz cut ngắn gọn, nam tính và dễ chăm sóc"
+  },
+  {
+    "id": "16",
+    "category": "female",
+    "style": "ponytail",
+    "occasion": "office",
+    "title": "Ponytail Cao Thanh Lịch",
+    "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=800",
+    "thumbnail": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400",
+    "description": "Kiểu tóc búi cao thanh lịch, phù hợp công sở"
+  },
+  {
+    "id": "17",
+    "category": "female",
+    "style": "braids",
+    "occasion": "party",
+    "title": "Tết Tóc Bohemian",
+    "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=800",
+    "thumbnail": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400",
+    "description": "Tết tóc phong cách bohemian cho dịp đặc biệt"
+  },
+  {
+    "id": "18",
+    "category": "male",
+    "style": "fringe",
+    "occasion": "daily",
+    "title": "Korean Fringe",
+    "image": "https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=800",
+    "thumbnail": "https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=400",
+    "description": "Tóc mái Hàn Quốc dài che trán, phong cách trẻ trung"
+  }
+]

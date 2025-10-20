@@ -1,0 +1,86 @@
+[
+  {
+    "id": "1",
+    "name": "Minh Châu",
+    "role": "Senior Stylist",
+    "specialty": "Nhuộm & Tạo màu thời trang",
+    "experience": "8 năm",
+    "image": "https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=400",
+    "description": "Chuyên gia nhuộm tóc với hơn 8 năm kinh nghiệm. Đã từng tham gia các show tóc quốc tế.",
+    "achievements": [
+      "Giải Nhất Tóc Thời Trang 2023",
+      "Top 10 Stylist Việt Nam 2024"
+    ],
+    "instagram": "@minhchau_hair",
+    "rating": 5.0,
+    "totalReviews": 128
+  },
+  {
+    "id": "2",
+    "name": "Tuấn Anh",
+    "role": "Master Barber",
+    "specialty": "Cắt tóc nam & Tạo kiểu",
+    "experience": "10 năm",
+    "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400",
+    "description": "Chuyên viên cắt tóc nam hàng đầu, thành thạo mọi kiểu tóc từ classic đến hiện đại.",
+    "achievements": ["Best Barber Sài Gòn 2022", "Founder HairZone Academy"],
+    "instagram": "@tuananh_barber",
+    "rating": 4.9,
+    "totalReviews": 215
+  },
+  {
+    "id": "3",
+    "name": "Phương Anh",
+    "role": "Hair Designer",
+    "specialty": "Cắt tóc nữ & Uốn tóc",
+    "experience": "6 năm",
+    "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400",
+    "description": "Nghệ sĩ tạo mẫu tóc với phong cách Hàn Quốc, chuyên uốn sóng tự nhiên.",
+    "achievements": ["Học viên xuất sắc Hàn Quốc 2021", "Top Stylist Trẻ 2023"],
+    "instagram": "@phuonganh_hair",
+    "rating": 4.8,
+    "totalReviews": 89
+  },
+  {
+    "id": "4",
+    "name": "Đức Huy",
+    "role": "Color Specialist",
+    "specialty": "Nhuộm Balayage & Highlights",
+    "experience": "7 năm",
+    "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400",
+    "description": "Chuyên gia màu tóc với kỹ thuật balayage, ombre tinh tế và tự nhiên.",
+    "achievements": ["Chứng chỉ Goldwell Color Expert", "Best Color 2023"],
+    "instagram": "@duchuy_color",
+    "rating": 4.9,
+    "totalReviews": 156
+  },
+  {
+    "id": "5",
+    "name": "Thanh Tâm",
+    "role": "Hair Therapist",
+    "specialty": "Phục hồi & Chăm sóc tóc",
+    "experience": "5 năm",
+    "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400",
+    "description": "Chuyên gia chăm sóc tóc hư tổn, massage đầu thư giãn và liệu trình phục hồi.",
+    "achievements": [
+      "Chứng chỉ Hair Therapy International",
+      "Spa Therapist 2022"
+    ],
+    "instagram": "@thanhtam_therapy",
+    "rating": 5.0,
+    "totalReviews": 93
+  },
+  {
+    "id": "6",
+    "name": "Quốc Bảo",
+    "role": "Creative Director",
+    "specialty": "Tạo kiểu sáng tạo & Runway",
+    "experience": "12 năm",
+    "image": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=400",
+    "description": "Giám đốc sáng tạo của HairZone, chuyên tạo kiểu cho fashion show và sự kiện.",
+    "achievements": ["Creative Director 2020-2025", "Fashion Week Stylist"],
+    "instagram": "@quocbao_creative",
+    "rating": 5.0,
+    "totalReviews": 187
+  }
+]

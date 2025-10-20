@@ -1,0 +1,158 @@
+[
+  {
+    "id": "1",
+    "name": "Cắt Tóc Nam",
+    "nameEn": "Men's Haircut",
+    "category": "haircut",
+    "gender": "male",
+    "description": "Cắt tóc nam chuyên nghiệp với các kiểu hiện đại: Undercut, Fade, Textured Crop, Pompadour. Stylist tư vấn kiểu tóc phù hợp khuôn mặt.",
+    "price": "150.000đ - 300.000đ",
+    "duration": "30-45 phút",
+    "image": "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=800",
+    "tag": "Best Seller",
+    "features": ["Gội đầu miễn phí", "Tạo kiểu miễn phí", "Tư vấn chuyên sâu"]
+  },
+  {
+    "id": "2",
+    "name": "Cắt Tóc Nữ",
+    "nameEn": "Women's Haircut",
+    "category": "haircut",
+    "gender": "female",
+    "description": "Cắt tóc nữ theo xu hướng: Bob, Layer, Lob, Shag. Tạo phong cách riêng cho từng khách hàng với độ dài và kiểu dáng phù hợp.",
+    "price": "200.000đ - 400.000đ",
+    "duration": "45-60 phút",
+    "image": "https://images.unsplash.com/photo-1560869713-7d0a29430803?w=800",
+    "tag": "Hot Trend",
+    "features": [
+      "Gội massage thư giãn",
+      "Tạo kiểu theo yêu cầu",
+      "Sấy suôn miễn phí"
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Nhuộm Tóc Thời Trang",
+    "nameEn": "Fashion Hair Coloring",
+    "category": "coloring",
+    "gender": "unisex",
+    "description": "Nhuộm tóc đa dạng: Balayage, Ombre, Highlight, màu pastel, màu neon. Sử dụng thuốc nhuộm cao cấp không gây hại tóc.",
+    "price": "500.000đ - 1.500.000đ",
+    "duration": "2-3 giờ",
+    "image": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800",
+    "tag": "Hot Trend",
+    "features": ["Test da miễn phí", "Bảo hành màu 2 tuần", "Hấp dầu sau nhuộm"]
+  },
+  {
+    "id": "4",
+    "name": "Uốn Tóc",
+    "nameEn": "Hair Perm",
+    "category": "styling",
+    "gender": "unisex",
+    "description": "Uốn sóng Hàn Quốc, uốn xoăn tự nhiên, uốn nóng, uốn lạnh. Tạo độ phồng và sóng tự nhiên cho tóc mềm mại.",
+    "price": "600.000đ - 1.200.000đ",
+    "duration": "2.5-3.5 giờ",
+    "image": "https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=800",
+    "tag": "",
+    "features": [
+      "Hấp dầu trước và sau uốn",
+      "Bảo hành kiểu uốn",
+      "Tư vấn chăm sóc tóc uốn"
+    ]
+  },
+  {
+    "id": "5",
+    "name": "Duỗi Tóc",
+    "nameEn": "Hair Straightening",
+    "category": "styling",
+    "gender": "unisex",
+    "description": "Duỗi thẳng tự nhiên, duỗi phồng, duỗi ion. Tóc suôn mượt không gây hư tổn với công nghệ hiện đại.",
+    "price": "700.000đ - 1.500.000đ",
+    "duration": "3-4 giờ",
+    "image": "https://images.unsplash.com/photo-1582095133179-bfd08e2fc6b3?w=800",
+    "tag": "",
+    "features": [
+      "Sử dụng thuốc Nhật Bản",
+      "Bảo hành 3 tháng",
+      "Chăm sóc tóc sau duỗi"
+    ]
+  },
+  {
+    "id": "6",
+    "name": "Phục Hồi Tóc Hư Tổn",
+    "nameEn": "Hair Treatment",
+    "category": "treatment",
+    "gender": "unisex",
+    "description": "Liệu trình phục hồi tóc hư tổn do nhuộm, uốn, duỗi. Sử dụng serum Keratin, Collagen cao cấp giúp tóc khỏe mạnh.",
+    "price": "300.000đ - 800.000đ",
+    "duration": "60-90 phút",
+    "image": "https://images.unsplash.com/photo-1562322140-8baeececf3df?w=800",
+    "tag": "Best Seller",
+    "features": [
+      "Phục hồi sâu",
+      "Tặng sản phẩm chăm sóc",
+      "Liệu trình 5-10 lần"
+    ]
+  },
+  {
+    "id": "7",
+    "name": "Hấp Dầu Cao Cấp",
+    "nameEn": "Premium Hair Spa",
+    "category": "treatment",
+    "gender": "unisex",
+    "description": "Hấp dầu dưỡng chất từ thiên nhiên: Argan, Macadamia, Keratin. Massage đầu thư giãn, giúp tóc mềm mượt óng ả.",
+    "price": "200.000đ - 500.000đ",
+    "duration": "45-60 phút",
+    "image": "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=800",
+    "tag": "",
+    "features": ["Massage đầu 15 phút", "Dưỡng ẩm sâu", "Hương thơm thư giãn"]
+  },
+  {
+    "id": "8",
+    "name": "Nối Tóc Cao Cấp",
+    "nameEn": "Hair Extensions",
+    "category": "extension",
+    "gender": "female",
+    "description": "Nối tóc thật 100%, tự nhiên như tóc thật. Nhiều độ dài và màu sắc để lựa chọn. Công nghệ nối không gây hại tóc.",
+    "price": "3.000.000đ - 8.000.000đ",
+    "duration": "3-5 giờ",
+    "image": "https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?w=800",
+    "tag": "",
+    "features": ["Tóc thật 100%", "Bảo hành 6 tháng", "Tháo lắp miễn phí"]
+  },
+  {
+    "id": "9",
+    "name": "Combo Cắt + Gội + Uốn",
+    "nameEn": "Cut + Wash + Perm Combo",
+    "category": "combo",
+    "gender": "unisex",
+    "description": "Combo tiết kiệm: Cắt tóc + Gội đầu massage + Uốn sóng tự nhiên. Phù hợp cho khách hàng muốn thay đổi phong cách toàn diện.",
+    "price": "1.200.000đ",
+    "originalPrice": "1.700.000đ",
+    "duration": "3-4 giờ",
+    "image": "https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=800",
+    "tag": "Best Seller",
+    "discount": "30%",
+    "features": [
+      "Tiết kiệm 500.000đ",
+      "Tạo kiểu miễn phí",
+      "Tặng voucher lần sau"
+    ]
+  },
+  {
+    "id": "10",
+    "name": "Tạo Kiểu Dự Tiệc",
+    "nameEn": "Party Styling",
+    "category": "styling",
+    "gender": "female",
+    "description": "Tạo kiểu tóc cho các dịp đặc biệt: đám cưới, dạ tiệc, sinh nhật. Phong cách sang trọng, lộng lẫy, giữ form suốt sự kiện.",
+    "price": "500.000đ - 1.500.000đ",
+    "duration": "60-120 phút",
+    "image": "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=800",
+    "tag": "",
+    "features": [
+      "Tạo kiểu theo yêu cầu",
+      "Cài phụ kiện miễn phí",
+      "Makeup nhẹ (tùy chọn)"
+    ]
+  }
+]
