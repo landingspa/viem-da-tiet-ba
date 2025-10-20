@@ -1,5 +1,6 @@
 "use client";
 
+import { use } from "react";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
@@ -16,8 +17,13 @@ import {
 import { Button } from "@/components/ui/button";
 import blogPosts from "@/data/blog_posts.json";
 
-export default function BlogPostPage({ params }: { params: { slug: string } }) {
-  const post = blogPosts.find((p) => p.slug === params.slug);
+export default function BlogPostPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = use(params);
+  const post = blogPosts.find((p) => p.slug === slug);
 
   if (!post) {
     notFound();

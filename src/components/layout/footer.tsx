@@ -54,8 +54,8 @@ const socialLinks = [
 export default function Footer() {
   return (
     <footer className="bg-[#111111] text-white border-t border-[#CBA135]/20">
-      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-4">
+      <div className="mx-auto max-w-7xl px-4 py-8 sm:py-10 md:py-12 sm:px-6 lg:px-8 lg:py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:grid-cols-4">
           {/* Brand & Description */}
           <div className="lg:col-span-1">
             <Link href="/" className="inline-block">
@@ -63,19 +63,19 @@ export default function Footer() {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
-                className="text-2xl font-black"
+                className="text-xl sm:text-2xl font-black"
               >
                 <span className="text-[#CBA135]">HAIR</span>
                 <span className="text-white">ZONE</span>
               </motion.div>
             </Link>
-            <p className="mt-4 text-sm text-zinc-400 leading-relaxed">
+            <p className="mt-3 sm:mt-4 text-xs sm:text-sm text-zinc-400 leading-relaxed">
               Salon tóc thời trang hàng đầu với đội ngũ stylist chuyên nghiệp.
               Mang đến phong cách hiện đại, sang trọng cho khách hàng.
             </p>
 
             {/* Social Links */}
-            <div className="mt-6 flex gap-4">
+            <div className="mt-4 sm:mt-6 flex gap-3 sm:gap-4">
               {socialLinks.map((social) => (
                 <a
                   key={social.name}
@@ -85,7 +85,7 @@ export default function Footer() {
                   className="rounded-full bg-zinc-800 p-2 hover:bg-[#CBA135] transition-colors"
                   aria-label={social.name}
                 >
-                  <social.icon className="h-5 w-5" />
+                  <social.icon className="h-4 w-4 sm:h-5 sm:w-5" />
                 </a>
               ))}
             </div>
@@ -93,10 +93,10 @@ export default function Footer() {
 
           {/* Services Links */}
           <div>
-            <h3 className="text-sm font-bold text-[#CBA135] uppercase tracking-wider">
+            <h3 className="text-xs sm:text-sm font-bold text-[#CBA135] uppercase tracking-wider">
               Dịch Vụ
             </h3>
-            <ul className="mt-4 space-y-3">
+            <ul className="mt-3 sm:mt-4 space-y-2 sm:space-y-3">
               {footerLinks.services.map((link) => (
                 <li key={link.name}>
                   <Link

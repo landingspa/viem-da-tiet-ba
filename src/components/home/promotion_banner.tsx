@@ -56,33 +56,35 @@ export default function PromotionBanner() {
           </motion.div>
 
           {/* Main Heading */}
-          <h2 className="text-4xl md:text-6xl font-black text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-6xl font-black text-white mb-4">
             COMBO CẮT + GỘI + UỐN
           </h2>
 
           {/* Discount Badge */}
-          <div className="flex items-center justify-center gap-4 mb-6">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-6">
             <div className="flex items-center gap-2">
-              <Tag className="h-8 w-8 text-[#CBA135]" />
+              <Tag className="h-6 w-6 sm:h-8 sm:w-8 text-[#CBA135]" />
               <div className="text-left">
-                <div className="text-[#CBA135] text-sm font-semibold">
+                <div className="text-[#CBA135] text-xs sm:text-sm font-semibold">
                   GIẢM NGAY
                 </div>
-                <div className="text-white text-3xl font-black">30%</div>
+                <div className="text-white text-2xl sm:text-3xl font-black">
+                  30%
+                </div>
               </div>
             </div>
-            <div className="h-16 w-px bg-white/30" />
-            <div className="text-left">
+            <div className="h-px w-16 sm:h-16 sm:w-px bg-white/30" />
+            <div className="text-center sm:text-left">
               <div className="text-zinc-300 text-sm line-through">
                 1.700.000đ
               </div>
-              <div className="text-[#CBA135] text-3xl font-black">
+              <div className="text-[#CBA135] text-2xl sm:text-3xl font-black">
                 1.200.000đ
               </div>
             </div>
           </div>
 
-          <p className="text-white/90 text-lg mb-8 max-w-2xl mx-auto">
+          <p className="text-white/90 text-base sm:text-lg mb-6 sm:mb-8 max-w-2xl mx-auto px-4">
             Đặt lịch ngay hôm nay để nhận ưu đãi độc quyền cho combo cắt, gội và
             uốn tóc. Tiết kiệm{" "}
             <span className="font-bold text-[#CBA135]">500.000đ</span> cho lần
@@ -90,11 +92,11 @@ export default function PromotionBanner() {
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch px-4">
             <Button
               asChild
               size="lg"
-              className="bg-[#CBA135] hover:bg-[#B39030] text-[#111111] font-black text-base px-10 py-6 shadow-xl"
+              className="bg-[#CBA135] hover:bg-[#B39030] text-[#111111] font-black text-sm sm:text-base px-8 sm:px-10 py-5 sm:py-6 shadow-xl w-full sm:w-auto"
             >
               <Link href="/booking">Nhận Ưu Đãi Ngay</Link>
             </Button>
@@ -102,14 +104,14 @@ export default function PromotionBanner() {
               asChild
               size="lg"
               variant="outline"
-              className="border-2 border-white text-white hover:bg-white hover:text-[#8B0000] font-bold text-base px-10 py-6"
+              className="border-2 border-white text-white hover:bg-white hover:text-[#8B0000] font-bold text-sm sm:text-base px-8 sm:px-10 py-5 sm:py-6 w-full sm:w-auto"
             >
               <Link href="/services">Xem Chi Tiết</Link>
             </Button>
           </div>
 
           {/* Terms */}
-          <p className="text-white/60 text-xs mt-6">
+          <p className="text-white/60 text-xs sm:text-sm mt-4 sm:mt-6 px-4">
             *Áp dụng cho khách hàng mới. Có thể kết thúc bất cứ lúc nào.
           </p>
         </motion.div>

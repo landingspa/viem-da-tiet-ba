@@ -1,18 +1,18 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
 :root {
   --background: #ffffff;
   --foreground: #111111;
-  --primary: #CBA135;
-  --secondary: #8B0000;
-  --accent: #CBA135;
+  --primary: #cba135;
+  --secondary: #8b0000;
+  --accent: #cba135;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: 'Poppins', system-ui, sans-serif;
+  font-family: "Poppins", system-ui, sans-serif;
   overflow-x: hidden;
 }
 
@@ -26,12 +26,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #CBA135;
+  background: #cba135;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #B39030;
+  background: #b39030;
 }
 
 /* Smooth scroll */
@@ -41,6 +41,16 @@ html {
 
 /* Selection */
 ::selection {
-  background: #CBA135;
+  background: #cba135;
   color: #111111;
+}
+
+/* Hide scrollbar for horizontal scroll */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }

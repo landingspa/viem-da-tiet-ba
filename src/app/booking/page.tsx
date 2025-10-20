@@ -31,25 +31,99 @@ export default function BookingPage() {
     notes: "",
   });
   const [showSuccess, setShowSuccess] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Simulate booking
-    setShowSuccess(true);
-    setTimeout(() => {
-      setShowSuccess(false);
-      // Reset form
-      setFormData({
-        name: "",
-        phone: "",
-        email: "",
-        date: "",
-        time: "",
-        notes: "",
+    setIsSubmitting(true);
+    setSubmitError("");
+
+    try {
+      // Get selected service and stylist data
+      const selectedServiceData = services.find(
+        (s) => s.id === selectedService
+      );
+      const selectedStylistData = stylists.find(
+        (s) => s.id === selectedStylist
+      );
+
+      // Format booking message
+      const bookingMessage = `
+📅 THÔNG TIN ĐẶT LỊCH:
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+👤 Khách hàng: ${formData.name}
+📞 Điện thoại: ${formData.phone}
+📧 Email: ${formData.email || "Không cung cấp"}
+
+🎯 Dịch vụ: ${selectedServiceData?.name || "Chưa chọn"}
+💰 Giá: ${selectedServiceData?.price || ""}
+⏱️ Thời gian thực hiện: ${selectedServiceData?.duration || ""}
+
+✂️ Stylist: ${selectedStylistData?.name || "Chưa chọn"}
+🎖️ Chức vụ: ${selectedStylistData?.role || ""}
+
+📅 Ngày hẹn: ${formData.date}
+🕐 Giờ hẹn: ${formData.time}
+
+📝 Ghi chú: ${formData.notes || "Không có ghi chú"}
+      `.trim();
+
+      // Send email via API
+      const response = await fetch("/api/send-mail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email || "no-reply@hairzone.vn",
+          phone: formData.phone,
+          message: bookingMessage,
+          subject: `Đặt lịch mới từ ${formData.name} - ${formData.date} ${formData.time}`,
+          adminEmail:
+            process.env.NEXT_PUBLIC_ADMIN_EMAIL || "contact@hairzone.vn",
+          adminName: "Hair Zone Admin",
+          companyName: "Hair Zone",
+          projectName: "Hair Zone - Salon Làm Tóc",
+          serviceName: selectedServiceData?.name || "dịch vụ làm tóc",
+        }),
       });
-      setSelectedService("");
-      setSelectedStylist("");
-    }, 5000);
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || "Có lỗi xảy ra khi gửi email");
+      }
+
+      // Show success modal
+      setShowSuccess(true);
+
+      // Reset form after 5 seconds
+      setTimeout(() => {
+        setShowSuccess(false);
+        setFormData({
+          name: "",
+          phone: "",
+          email: "",
+          date: "",
+          time: "",
+          notes: "",
+        });
+        setSelectedService("");
+        setSelectedStylist("");
+      }, 5000);
+    } catch (error) {
+      console.error("Booking error:", error);
+      setSubmitError(
+        error instanceof Error
+          ? error.message
+          : "Có lỗi xảy ra. Vui lòng thử lại hoặc liên hệ hotline: 0901 234 567"
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleInputChange = (
@@ -67,7 +141,7 @@ export default function BookingPage() {
   return (
     <div className="min-h-screen bg-zinc-50 pt-20">
       {/* Hero Section */}
-      <section className="relative bg-[#111111] py-20 overflow-hidden">
+      <section className="relative bg-[#111111] py-12 sm:py-16 md:py-20 overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src="https://images.unsplash.com/photo-1560869713-7d0a29430803?w=1920"
@@ -82,13 +156,13 @@ export default function BookingPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <div className="inline-block bg-[#CBA135]/20 text-[#CBA135] px-4 py-2 rounded-full text-sm font-bold mb-4">
+            <div className="inline-block bg-[#CBA135]/20 text-[#CBA135] px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-bold mb-3 sm:mb-4">
               ĐẶT LỊCH NHANH
             </div>
-            <h1 className="text-5xl md:text-6xl font-black text-white mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white mb-4 sm:mb-6">
               Đặt Lịch <span className="text-[#CBA135]">Làm Tóc</span>
             </h1>
-            <p className="text-xl text-zinc-300 max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-zinc-300 max-w-2xl mx-auto px-4">
               Chọn dịch vụ và stylist yêu thích, đặt lịch chỉ trong vài phút
             </p>
           </motion.div>
@@ -96,35 +170,38 @@ export default function BookingPage() {
       </section>
 
       {/* Booking Form */}
-      <section className="py-20">
+      <section className="py-12 sm:py-16 md:py-20">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-3 gap-8">
+          <div className="grid lg:grid-cols-3 gap-6 sm:gap-8">
             {/* Main Form */}
             <div className="lg:col-span-2">
               <Card>
-                <CardContent className="p-8">
-                  <form onSubmit={handleSubmit} className="space-y-6">
+                <CardContent className="p-5 sm:p-6 md:p-8">
+                  <form
+                    onSubmit={handleSubmit}
+                    className="space-y-5 sm:space-y-6"
+                  >
                     {/* Service Selection */}
                     <div>
-                      <label className="block text-sm font-bold text-[#111111] mb-3">
+                      <label className="block text-xs sm:text-sm font-bold text-[#111111] mb-2 sm:mb-3">
                         Chọn Dịch Vụ <span className="text-red-500">*</span>
                       </label>
-                      <div className="grid sm:grid-cols-2 gap-3">
+                      <div className="grid sm:grid-cols-2 gap-2 sm:gap-3">
                         {services.slice(0, 6).map((service) => (
                           <button
                             key={service.id}
                             type="button"
                             onClick={() => setSelectedService(service.id)}
-                            className={`text-left p-4 rounded-lg border-2 transition-all ${
+                            className={`text-left p-3 sm:p-4 rounded-lg border-2 transition-all ${
                               selectedService === service.id
                                 ? "border-[#CBA135] bg-[#CBA135]/5"
                                 : "border-zinc-200 hover:border-[#CBA135]/50"
                             }`}
                           >
-                            <div className="font-semibold text-[#111111] mb-1">
+                            <div className="font-semibold text-sm sm:text-base text-[#111111] mb-1">
                               {service.name}
                             </div>
-                            <div className="text-sm text-zinc-500">
+                            <div className="text-xs sm:text-sm text-zinc-500">
                               {service.price}
                             </div>
                           </button>
@@ -134,22 +211,22 @@ export default function BookingPage() {
 
                     {/* Stylist Selection */}
                     <div>
-                      <label className="block text-sm font-bold text-[#111111] mb-3">
+                      <label className="block text-xs sm:text-sm font-bold text-[#111111] mb-2 sm:mb-3">
                         Chọn Stylist <span className="text-red-500">*</span>
                       </label>
-                      <div className="grid sm:grid-cols-2 gap-3">
+                      <div className="grid sm:grid-cols-2 gap-2 sm:gap-3">
                         {stylists.map((stylist) => (
                           <button
                             key={stylist.id}
                             type="button"
                             onClick={() => setSelectedStylist(stylist.id)}
-                            className={`flex items-center gap-3 p-3 rounded-lg border-2 transition-all ${
+                            className={`flex items-center gap-2 sm:gap-3 p-2.5 sm:p-3 rounded-lg border-2 transition-all ${
                               selectedStylist === stylist.id
                                 ? "border-[#CBA135] bg-[#CBA135]/5"
                                 : "border-zinc-200 hover:border-[#CBA135]/50"
                             }`}
                           >
-                            <div className="relative w-12 h-12 rounded-full overflow-hidden flex-shrink-0">
+                            <div className="relative w-10 h-10 sm:w-12 sm:h-12 rounded-full overflow-hidden flex-shrink-0">
                               <Image
                                 src={stylist.image}
                                 alt={stylist.name}
@@ -158,7 +235,7 @@ export default function BookingPage() {
                               />
                             </div>
                             <div className="text-left">
-                              <div className="font-semibold text-[#111111]">
+                              <div className="font-semibold text-sm sm:text-base text-[#111111]">
                                 {stylist.name}
                               </div>
                               <div className="text-xs text-zinc-500">
@@ -171,9 +248,9 @@ export default function BookingPage() {
                     </div>
 
                     {/* Personal Info */}
-                    <div className="grid sm:grid-cols-2 gap-4">
+                    <div className="grid sm:grid-cols-2 gap-3 sm:gap-4">
                       <div>
-                        <label className="block text-sm font-bold text-[#111111] mb-2">
+                        <label className="block text-xs sm:text-sm font-bold text-[#111111] mb-2">
                           Họ Tên <span className="text-red-500">*</span>
                         </label>
                         <div className="relative">
@@ -275,14 +352,32 @@ export default function BookingPage() {
                       />
                     </div>
 
+                    {/* Error Message */}
+                    {submitError && (
+                      <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg text-sm">
+                        {submitError}
+                      </div>
+                    )}
+
                     {/* Submit Button */}
                     <Button
                       type="submit"
                       size="lg"
                       className="w-full text-base"
-                      disabled={!selectedService || !selectedStylist}
+                      disabled={
+                        !selectedService || !selectedStylist || isSubmitting
+                      }
                     >
-                      Xác Nhận Đặt Lịch
+                      {isSubmitting ? (
+                        <>
+                          <span className="inline-block animate-spin mr-2">
+                            ⏳
+                          </span>
+                          Đang xử lý...
+                        </>
+                      ) : (
+                        "Xác Nhận Đặt Lịch"
+                      )}
                     </Button>
                   </form>
                 </CardContent>

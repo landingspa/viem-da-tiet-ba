@@ -36,7 +36,7 @@ export default function GalleryPage() {
   return (
     <div className="min-h-screen bg-white pt-20">
       {/* Hero Section */}
-      <section className="relative bg-[#111111] py-20 overflow-hidden">
+      <section className="relative bg-[#111111] py-12 sm:py-16 md:py-20 overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=1920"
@@ -51,13 +51,13 @@ export default function GalleryPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <div className="inline-block bg-[#CBA135]/20 text-[#CBA135] px-4 py-2 rounded-full text-sm font-bold mb-4">
+            <div className="inline-block bg-[#CBA135]/20 text-[#CBA135] px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-bold mb-3 sm:mb-4">
               ALBUM KIỂU TÓC
             </div>
-            <h1 className="text-5xl md:text-6xl font-black text-white mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white mb-4 sm:mb-6">
               Bộ Sưu Tập <span className="text-[#CBA135]">Kiểu Tóc</span>
             </h1>
-            <p className="text-xl text-zinc-300 max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-zinc-300 max-w-2xl mx-auto px-4">
               Khám phá hàng trăm kiểu tóc thời trang được thực hiện bởi đội ngũ
               stylist chuyên nghiệp
             </p>
@@ -67,18 +67,17 @@ export default function GalleryPage() {
 
       {/* Filters */}
       <section className="sticky top-20 z-40 bg-white border-b border-zinc-200 shadow-sm">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6">
-          {/* Category Filter */}
-          <div className="mb-4">
-            <div className="text-sm font-semibold text-zinc-500 mb-2">
-              GIỚI TÍNH
-            </div>
-            <div className="flex flex-wrap gap-2">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-3 sm:py-4">
+          {/* Combined Filters in One Row */}
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+            {/* Left: Category + Occasion Filters */}
+            <div className="flex items-center gap-2 overflow-x-auto scrollbar-hide flex-1">
+              {/* Category Pills */}
               {categories.map((category) => (
                 <button
                   key={category.id}
                   onClick={() => setSelectedCategory(category.id)}
-                  className={`px-6 py-2 rounded-full font-semibold transition-all ${
+                  className={`flex-shrink-0 px-3 sm:px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold transition-all whitespace-nowrap ${
                     selectedCategory === category.id
                       ? "bg-[#CBA135] text-[#111111] shadow-lg"
                       : "bg-zinc-100 text-zinc-600 hover:bg-zinc-200"
@@ -87,18 +86,16 @@ export default function GalleryPage() {
                   {category.name}
                 </button>
               ))}
-            </div>
-          </div>
 
-          {/* Occasion Filter */}
-          <div>
-            <div className="text-sm font-semibold text-zinc-500 mb-2">DỊP</div>
-            <div className="flex flex-wrap gap-2">
+              {/* Divider */}
+              <div className="flex-shrink-0 w-px h-6 bg-zinc-300" />
+
+              {/* Occasion Pills */}
               {occasions.map((occasion) => (
                 <button
                   key={occasion.id}
                   onClick={() => setSelectedOccasion(occasion.id)}
-                  className={`px-6 py-2 rounded-full font-semibold transition-all ${
+                  className={`flex-shrink-0 px-3 sm:px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold transition-all whitespace-nowrap ${
                     selectedOccasion === occasion.id
                       ? "bg-[#CBA135] text-[#111111] shadow-lg"
                       : "bg-zinc-100 text-zinc-600 hover:bg-zinc-200"
@@ -108,25 +105,24 @@ export default function GalleryPage() {
                 </button>
               ))}
             </div>
-          </div>
 
-          {/* Results Count */}
-          <div className="mt-4 text-sm text-zinc-500">
-            Hiển thị{" "}
-            <span className="font-bold text-[#CBA135]">
-              {filteredGallery.length}
-            </span>{" "}
-            kết quả
+            {/* Right: Results Count */}
+            <div className="flex-shrink-0 text-xs sm:text-sm text-zinc-500 whitespace-nowrap">
+              <span className="font-bold text-[#CBA135]">
+                {filteredGallery.length}
+              </span>{" "}
+              kết quả
+            </div>
           </div>
         </div>
       </section>
 
       {/* Gallery Grid */}
-      <section className="py-12">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section className="py-6 sm:py-8 md:py-10">
+        <div className="mx-auto max-w-7xl px-3 sm:px-6 lg:px-8">
           <motion.div
             layout
-            className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-4 space-y-4"
+            className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4"
           >
             <AnimatePresence>
               {filteredGallery.map((item, index) => (
@@ -137,7 +133,7 @@ export default function GalleryPage() {
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.8 }}
                   transition={{ duration: 0.3, delay: index * 0.02 }}
-                  className="break-inside-avoid group relative overflow-hidden rounded-xl cursor-pointer"
+                  className="group relative overflow-hidden rounded-lg sm:rounded-xl cursor-pointer"
                   onClick={() => setSelectedImage(item.image)}
                 >
                   <div className="relative aspect-[3/4]">
@@ -149,11 +145,11 @@ export default function GalleryPage() {
                     />
                     {/* Overlay */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <div className="absolute bottom-0 left-0 right-0 p-4">
-                        <h3 className="text-white font-bold text-lg mb-1">
+                      <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-4">
+                        <h3 className="text-white font-bold text-sm sm:text-base md:text-lg mb-1">
                           {item.title}
                         </h3>
-                        <p className="text-white/80 text-sm">
+                        <p className="text-white/80 text-xs sm:text-sm line-clamp-2">
                           {item.description}
                         </p>
                       </div>
