@@ -35,7 +35,7 @@ export default function FloatingCTA() {
             <motion.div
               initial={{ width: 60, height: 60 }}
               animate={{ width: "auto", height: "auto" }}
-              className="bg-[#CBA135] rounded-2xl sm:rounded-full shadow-2xl p-3 sm:p-4"
+              className="bg-[#4a7c2e] rounded-2xl sm:rounded-full shadow-2xl p-3 sm:p-4"
             >
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 sm:gap-3">
                 <div className="flex flex-col gap-2">
@@ -47,11 +47,11 @@ export default function FloatingCTA() {
                     <Link href="/booking">Đặt Lịch Ngay</Link>
                   </Button>
                   <a
-                    href="tel:+84901234567"
+                    href="tel:+84862803268"
                     className="flex items-center justify-center gap-2 bg-white text-[#111111] px-3 sm:px-4 py-2 rounded-md font-semibold hover:bg-zinc-100 transition-colors text-sm sm:text-base"
                   >
                     <Phone className="h-3 w-3 sm:h-4 sm:w-4" />
-                    <span>0901 234 567</span>
+                    <span>0862.803.268</span>
                   </a>
                 </div>
                 <button
@@ -68,14 +68,14 @@ export default function FloatingCTA() {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => setIsExpanded(true)}
-              className="w-14 h-14 sm:w-16 sm:h-16 bg-[#CBA135] hover:bg-[#B39030] rounded-full shadow-2xl flex items-center justify-center group transition-colors"
+              className="w-14 h-14 sm:w-16 sm:h-16 bg-[#4a7c2e] hover:bg-[#6ba547] rounded-full shadow-2xl flex items-center justify-center group transition-colors"
               aria-label="Mở menu đặt lịch"
             >
               <motion.div
                 animate={{ rotate: [0, 10, -10, 0] }}
                 transition={{ duration: 1, repeat: Infinity, repeatDelay: 2 }}
               >
-                <Phone className="h-6 w-6 sm:h-7 sm:w-7 text-[#111111]" />
+                <Phone className="h-6 w-6 sm:h-7 sm:w-7 text-white" />
               </motion.div>
             </motion.button>
           )}

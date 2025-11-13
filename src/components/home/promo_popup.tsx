@@ -54,7 +54,7 @@ export default function PromoPopup() {
             transition={{ type: "spring", duration: 0.5 }}
             className="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-50 w-full max-w-md"
           >
-            <div className="relative bg-gradient-to-br from-[#111111] via-[#1a1a1a] to-[#111111] rounded-3xl p-8 shadow-2xl border-2 border-[#CBA135]">
+            <div className="relative bg-gradient-to-br from-[#111111] via-[#1a1a1a] to-[#111111] rounded-3xl p-8 shadow-2xl border-2 border-[#4a7c2e]">
               {/* Close Button */}
               <button
                 onClick={handleClose}
@@ -76,7 +76,7 @@ export default function PromoPopup() {
                     repeat: Infinity,
                     ease: "linear",
                   }}
-                  className="absolute -top-20 -right-20 w-40 h-40 bg-[#CBA135]/20 rounded-full blur-3xl"
+                  className="absolute -top-20 -right-20 w-40 h-40 bg-[#6ba547]/20 rounded-full blur-3xl"
                 />
               </div>
 
@@ -86,7 +86,7 @@ export default function PromoPopup() {
                 <motion.div
                   animate={{ y: [0, -5, 0] }}
                   transition={{ duration: 2, repeat: Infinity }}
-                  className="inline-flex items-center gap-2 bg-[#CBA135] text-[#111111] px-4 py-2 rounded-full font-bold text-sm mb-6"
+                  className="inline-flex items-center gap-2 bg-[#6ba547] text-white px-4 py-2 rounded-full font-bold text-sm mb-6"
                 >
                   <Sparkles className="h-4 w-4" />
                   <span>ƯU ĐÃI ĐẶC BIỆT</span>
@@ -95,37 +95,31 @@ export default function PromoPopup() {
 
                 <h2 className="text-3xl md:text-4xl font-black text-white mb-4">
                   Chào Mừng Đến <br />
-                  <span className="text-[#CBA135]">
-                    Viêm Da Tiết Bã Đà Nẵng
-                  </span>
+                  <span className="text-[#6ba547]">MOORE Spa Đà Nẵng</span>
                 </h2>
 
                 {/* Discount Circle */}
                 <motion.div
                   animate={{ rotate: [0, 5, -5, 0] }}
                   transition={{ duration: 3, repeat: Infinity }}
-                  className="inline-flex items-center justify-center w-32 h-32 bg-[#CBA135] rounded-full mb-6 relative"
+                  className="inline-flex items-center justify-center w-32 h-32 bg-[#4a7c2e] rounded-full mb-6 relative"
                 >
                   <div className="text-center">
-                    <div className="text-4xl font-black text-[#111111]">
-                      30%
-                    </div>
-                    <div className="text-xs font-bold text-[#111111]">
-                      GIẢM GIÁ
-                    </div>
+                    <div className="text-4xl font-black text-white">30%</div>
+                    <div className="text-xs font-bold text-white">GIẢM GIÁ</div>
                   </div>
                   {/* Pulse Effect */}
                   <motion.div
                     animate={{ scale: [1, 1.3, 1], opacity: [0.5, 0, 0.5] }}
                     transition={{ duration: 2, repeat: Infinity }}
-                    className="absolute inset-0 bg-[#CBA135] rounded-full"
+                    className="absolute inset-0 bg-[#4a7c2e] rounded-full"
                   />
                 </motion.div>
 
                 <p className="text-white/90 text-lg mb-2">
                   Cho lần điều trị đầu tiên
                 </p>
-                <p className="text-[#CBA135] font-bold text-xl mb-6">
+                <p className="text-[#6ba547] font-bold text-xl mb-6">
                   Combo Trị Gàu + Kích Mọc Tóc
                 </p>
 
@@ -133,7 +127,7 @@ export default function PromoPopup() {
                   <Button
                     asChild
                     size="lg"
-                    className="w-full bg-[#CBA135] hover:bg-[#B39030] text-[#111111] font-black text-base"
+                    className="w-full bg-[#6ba547] hover:bg-[#4a7c2e] text-white font-black text-base"
                     onClick={handleClaim}
                   >
                     <Link href="/booking">Nhận Ưu Đãi Ngay</Link>

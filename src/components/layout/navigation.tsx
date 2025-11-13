@@ -50,10 +50,10 @@ function Navigation() {
               animate={{ opacity: 1, x: 0 }}
               className="text-2xl font-black tracking-tight"
             >
-              <span className="text-[#CBA135]" style={{ marginRight: "10px" }}>
-                Viêm Da
+              <span className="text-[#6ba547]" style={{ marginRight: "10px" }}>
+                MOORE
               </span>
-              <span className="text-white">Tiết Bã</span>
+              <span className="text-white">SPA</span>
             </motion.div>
           </Link>
 
@@ -68,7 +68,7 @@ function Navigation() {
               >
                 <Link
                   href={item.href}
-                  className="text-sm font-semibold text-white hover:text-[#CBA135] transition-colors"
+                  className="text-sm font-semibold text-white hover:text-[#6ba547] transition-colors"
                 >
                   {item.name}
                 </Link>
@@ -79,11 +79,11 @@ function Navigation() {
           {/* Contact Info & CTA */}
           <div className="hidden lg:flex lg:items-center lg:gap-4">
             <a
-              href="tel:+84901234567"
-              className="flex items-center gap-2 text-sm text-white hover:text-[#CBA135] transition-colors"
+              href="tel:+84862803268"
+              className="flex items-center gap-2 text-sm text-white hover:text-[#6ba547] transition-colors"
             >
               <Phone className="h-4 w-4" />
-              <span>0901 234 567</span>
+              <span>0862.803.268</span>
             </a>
             <Button asChild size="lg">
               <Link href="/booking">Đặt Lịch Ngay</Link>
@@ -113,14 +113,14 @@ function Navigation() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-[#111111] border-t border-[#CBA135]/20"
+            className="lg:hidden bg-[#111111] border-t border-[#6ba547]/20"
           >
             <div className="space-y-1 px-4 pb-6 pt-4">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-[#CBA135]/10 hover:text-[#CBA135]"
+                  className="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-[#6ba547]/10 hover:text-[#6ba547]"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.name}
@@ -128,11 +128,11 @@ function Navigation() {
               ))}
               <div className="pt-4 space-y-2">
                 <a
-                  href="tel:+84901234567"
+                  href="tel:+84862803268"
                   className="flex items-center gap-2 px-3 py-2 text-sm text-white"
                 >
                   <Phone className="h-4 w-4" />
-                  <span>0901 234 567</span>
+                  <span>0862.803.268</span>
                 </a>
                 <Button asChild size="lg" className="w-full">
                   <Link href="/booking">Đặt Lịch Ngay</Link>

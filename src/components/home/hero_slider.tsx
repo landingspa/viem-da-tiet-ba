@@ -98,7 +98,7 @@ export default function HeroSlider() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.2, duration: 0.6 }}
                 >
-                  <h2 className="text-[#CBA135] text-sm sm:text-base md:text-lg font-semibold mb-2 sm:mb-4 tracking-wide">
+                  <h2 className="text-[#6ba547] text-sm sm:text-base md:text-lg font-semibold mb-2 sm:mb-4 tracking-wide">
                     {slides[currentSlide].subtitle}
                   </h2>
                   <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-white mb-4 sm:mb-6 leading-tight">
@@ -134,14 +134,14 @@ export default function HeroSlider() {
       {/* Navigation Arrows - Hidden on mobile */}
       <button
         onClick={goToPrevious}
-        className="hidden sm:block absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-20 rounded-full bg-white/10 backdrop-blur-sm p-2 sm:p-3 text-white hover:bg-[#CBA135] transition-colors"
+        className="hidden sm:block absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-20 rounded-full bg-white/10 backdrop-blur-sm p-2 sm:p-3 text-white hover:bg-[#4a7c2e] transition-colors"
         aria-label="Previous slide"
       >
         <ChevronLeft className="h-5 w-5 sm:h-6 sm:w-6" />
       </button>
       <button
         onClick={goToNext}
-        className="hidden sm:block absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 z-20 rounded-full bg-white/10 backdrop-blur-sm p-2 sm:p-3 text-white hover:bg-[#CBA135] transition-colors"
+        className="hidden sm:block absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 z-20 rounded-full bg-white/10 backdrop-blur-sm p-2 sm:p-3 text-white hover:bg-[#4a7c2e] transition-colors"
         aria-label="Next slide"
       >
         <ChevronRight className="h-5 w-5 sm:h-6 sm:w-6" />
@@ -155,7 +155,7 @@ export default function HeroSlider() {
             onClick={() => goToSlide(index)}
             className={`h-1.5 sm:h-2 rounded-full transition-all ${
               index === currentSlide
-                ? "bg-[#CBA135] w-8 sm:w-12"
+                ? "bg-[#4a7c2e] w-8 sm:w-12"
                 : "bg-white/50 w-1.5 sm:w-2 hover:bg-white/80"
             }`}
             aria-label={`Go to slide ${index + 1}`}

@@ -17,11 +17,9 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 import services from "@/data/services.json";
-import stylists from "@/data/stylists.json";
 
 export default function BookingPage() {
   const [selectedService, setSelectedService] = useState("");
-  const [selectedStylist, setSelectedStylist] = useState("");
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -40,12 +38,9 @@ export default function BookingPage() {
     setSubmitError("");
 
     try {
-      // Get selected service and stylist data
+      // Get selected service data
       const selectedServiceData = services.find(
         (s) => s.id === selectedService
-      );
-      const selectedStylistData = stylists.find(
-        (s) => s.id === selectedStylist
       );
 
       // Format booking message
@@ -60,9 +55,6 @@ export default function BookingPage() {
 🎯 Dịch vụ: ${selectedServiceData?.name || "Chưa chọn"}
 💰 Giá: ${selectedServiceData?.price || ""}
 ⏱️ Thời gian thực hiện: ${selectedServiceData?.duration || ""}
-
-👨‍⚕️ Chuyên gia: ${selectedStylistData?.name || "Chưa chọn"}
-🎖️ Chức vụ: ${selectedStylistData?.role || ""}
 
 📅 Ngày hẹn: ${formData.date}
 🕐 Giờ hẹn: ${formData.time}
@@ -83,10 +75,10 @@ export default function BookingPage() {
           message: bookingMessage,
           subject: `Đặt lịch mới từ ${formData.name} - ${formData.date} ${formData.time}`,
           adminEmail:
-            process.env.NEXT_PUBLIC_ADMIN_EMAIL || "contact@scalpcarespa.vn",
-          adminName: "Viêm Da Tiết Bã Đà Nẵng Admin",
-          companyName: "Viêm Da Tiết Bã Đà Nẵng",
-          projectName: "Viêm Da Tiết Bã Đà Nẵng - Chăm Sóc Da Đầu",
+            process.env.NEXT_PUBLIC_ADMIN_EMAIL || "contact@moorespa.vn",
+          adminName: "MOORE Spa Đà Nẵng Admin",
+          companyName: "MOORE Spa Đà Nẵng",
+          projectName: "MOORE Spa - Chăm Sóc Da Đầu Chuyên Sâu",
           serviceName: selectedServiceData?.name || "dịch vụ chăm sóc da đầu",
         }),
       });
@@ -112,14 +104,13 @@ export default function BookingPage() {
           notes: "",
         });
         setSelectedService("");
-        setSelectedStylist("");
       }, 5000);
     } catch (error) {
       console.error("Booking error:", error);
       setSubmitError(
         error instanceof Error
           ? error.message
-          : "Có lỗi xảy ra. Vui lòng thử lại hoặc liên hệ hotline: 0901 234 567"
+          : "Có lỗi xảy ra. Vui lòng thử lại hoặc liên hệ hotline: 0862 803 268"
       );
     } finally {
       setIsSubmitting(false);
@@ -136,7 +127,6 @@ export default function BookingPage() {
   };
 
   const selectedServiceData = services.find((s) => s.id === selectedService);
-  const selectedStylistData = stylists.find((s) => s.id === selectedStylist);
 
   return (
     <div className="min-h-screen bg-zinc-50 pt-20">
@@ -156,11 +146,11 @@ export default function BookingPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <div className="inline-block bg-[#CBA135]/20 text-[#CBA135] px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-bold mb-3 sm:mb-4">
+            <div className="inline-block bg-[#6ba547]/20 text-[#6ba547] px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-bold mb-3 sm:mb-4">
               ĐẶT LỊCH NHANH
             </div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white mb-4 sm:mb-6">
-              Đặt Lịch <span className="text-[#CBA135]">Điều Trị</span>
+              Đặt Lịch <span className="text-[#6ba547]">Điều Trị</span>
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-zinc-300 max-w-2xl mx-auto px-4">
               Chọn dịch vụ và chuyên gia yêu thích, đặt lịch chỉ trong vài phút
@@ -194,8 +184,8 @@ export default function BookingPage() {
                             onClick={() => setSelectedService(service.id)}
                             className={`text-left p-3 sm:p-4 rounded-lg border-2 transition-all ${
                               selectedService === service.id
-                                ? "border-[#CBA135] bg-[#CBA135]/5"
-                                : "border-zinc-200 hover:border-[#CBA135]/50"
+                                ? "border-[#4a7c2e] bg-[#6ba547]/5"
+                                : "border-zinc-200 hover:border-[#4a7c2e]/50"
                             }`}
                           >
                             <div className="font-semibold text-sm sm:text-base text-[#111111] mb-1">
@@ -203,44 +193,6 @@ export default function BookingPage() {
                             </div>
                             <div className="text-xs sm:text-sm text-zinc-500">
                               {service.price}
-                            </div>
-                          </button>
-                        ))}
-                      </div>
-                    </div>
-
-                    {/* Stylist Selection */}
-                    <div>
-                      <label className="block text-xs sm:text-sm font-bold text-[#111111] mb-2 sm:mb-3">
-                        Chọn Chuyên Gia <span className="text-red-500">*</span>
-                      </label>
-                      <div className="grid sm:grid-cols-2 gap-2 sm:gap-3">
-                        {stylists.map((stylist) => (
-                          <button
-                            key={stylist.id}
-                            type="button"
-                            onClick={() => setSelectedStylist(stylist.id)}
-                            className={`flex items-center gap-2 sm:gap-3 p-2.5 sm:p-3 rounded-lg border-2 transition-all ${
-                              selectedStylist === stylist.id
-                                ? "border-[#CBA135] bg-[#CBA135]/5"
-                                : "border-zinc-200 hover:border-[#CBA135]/50"
-                            }`}
-                          >
-                            <div className="relative w-10 h-10 sm:w-12 sm:h-12 rounded-full overflow-hidden flex-shrink-0">
-                              <Image
-                                src={stylist.image}
-                                alt={stylist.name}
-                                fill
-                                className="object-cover"
-                              />
-                            </div>
-                            <div className="text-left">
-                              <div className="font-semibold text-sm sm:text-base text-[#111111]">
-                                {stylist.name}
-                              </div>
-                              <div className="text-xs text-zinc-500">
-                                {stylist.role}
-                              </div>
                             </div>
                           </button>
                         ))}
@@ -364,9 +316,7 @@ export default function BookingPage() {
                       type="submit"
                       size="lg"
                       className="w-full text-base"
-                      disabled={
-                        !selectedService || !selectedStylist || isSubmitting
-                      }
+                      disabled={!selectedService || isSubmitting}
                     >
                       {isSubmitting ? (
                         <>
@@ -399,7 +349,7 @@ export default function BookingPage() {
                       <div className="font-semibold text-[#111111]">
                         {selectedServiceData.name}
                       </div>
-                      <div className="text-sm text-[#CBA135] font-bold mt-1">
+                      <div className="text-sm text-[#4a7c2e] font-bold mt-1">
                         {selectedServiceData.price}
                       </div>
                       <div className="text-xs text-zinc-500 mt-1 flex items-center gap-1">
@@ -409,44 +359,17 @@ export default function BookingPage() {
                     </div>
                   )}
 
-                  {/* Selected Stylist */}
-                  {selectedStylistData && (
-                    <div className="mb-4 pb-4 border-b border-zinc-100">
-                      <div className="text-sm text-zinc-500 mb-2">
-                        Chuyên Gia
-                      </div>
-                      <div className="flex items-center gap-3">
-                        <div className="relative w-12 h-12 rounded-full overflow-hidden">
-                          <Image
-                            src={selectedStylistData.image}
-                            alt={selectedStylistData.name}
-                            fill
-                            className="object-cover"
-                          />
-                        </div>
-                        <div>
-                          <div className="font-semibold text-[#111111]">
-                            {selectedStylistData.name}
-                          </div>
-                          <div className="text-xs text-zinc-500">
-                            {selectedStylistData.role}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  )}
-
                   {/* Contact Info */}
-                  <div className="bg-[#CBA135]/10 rounded-lg p-4">
+                  <div className="bg-[#6ba547]/10 rounded-lg p-4">
                     <div className="flex items-center gap-2 mb-2">
-                      <Sparkles className="h-4 w-4 text-[#CBA135]" />
+                      <Sparkles className="h-4 w-4 text-[#4a7c2e]" />
                       <div className="font-semibold text-[#111111]">
                         Cần Hỗ Trợ?
                       </div>
                     </div>
                     <div className="text-sm text-zinc-600 space-y-1">
-                      <div>Hotline: 0901 234 567</div>
-                      <div>Email: contact@scalpcarespa.vn</div>
+                      <div>Hotline: 0862 803 268</div>
+                      <div>Email: contact@moorespa.vn</div>
                     </div>
                   </div>
                 </CardContent>
@@ -483,7 +406,7 @@ export default function BookingPage() {
               Chúng tôi đã nhận được yêu cầu đặt lịch của bạn. Nhân viên sẽ liên
               hệ xác nhận qua số điện thoại trong ít phút.
             </p>
-            <div className="bg-[#CBA135]/10 rounded-lg p-4 mb-6">
+            <div className="bg-[#6ba547]/10 rounded-lg p-4 mb-6">
               <div className="text-sm text-zinc-600 mb-2">
                 Bạn cũng có thể xác nhận qua:
               </div>

@@ -66,7 +66,7 @@ export default function BlogPostPage({
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <div className="inline-block bg-[#CBA135] text-[#111111] px-4 py-2 rounded-full text-sm font-bold mb-4">
+              <div className="inline-block bg-[#4a7c2e] text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
                 {post.category}
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-6">
@@ -211,7 +211,7 @@ export default function BlogPostPage({
               </div>
 
               {/* CTA Card */}
-              <div className="bg-gradient-to-br from-[#CBA135] to-[#B39030] rounded-2xl p-6 text-white">
+              <div className="bg-gradient-to-br from-[#4a7c2e] to-[#2d5016] rounded-2xl p-6 text-white">
                 <div className="text-2xl font-black mb-3">
                   Nhận Tư Vấn Miễn Phí
                 </div>
@@ -250,7 +250,7 @@ export default function BlogPostPage({
                         className="object-cover group-hover:scale-110 transition-transform duration-500"
                       />
                     </div>
-                    <h3 className="text-xl font-bold text-[#111111] mb-2 group-hover:text-[#CBA135] transition-colors line-clamp-2">
+                    <h3 className="text-xl font-bold text-[#111111] mb-2 group-hover:text-[#4a7c2e] transition-colors line-clamp-2">
                       {relatedPost.title}
                     </h3>
                     <p className="text-sm text-zinc-600 line-clamp-2">

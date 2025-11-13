@@ -53,7 +53,7 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#111111] text-white border-t border-[#CBA135]/20">
+    <footer className="bg-[#111111] text-white border-t border-[#6ba547]/20">
       <div className="mx-auto max-w-7xl px-4 py-8 sm:py-10 md:py-12 sm:px-6 lg:px-8 lg:py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:grid-cols-4">
           {/* Brand & Description */}
@@ -65,8 +65,8 @@ export default function Footer() {
                 viewport={{ once: true }}
                 className="text-xl sm:text-2xl font-black"
               >
-                <span className="text-[#CBA135]">SCALP</span>
-                <span className="text-white">CARE SPA</span>
+                <span className="text-[#6ba547]">MOORE</span>
+                <span className="text-white"> SPA</span>
               </motion.div>
             </Link>
             <p className="mt-3 sm:mt-4 text-xs sm:text-sm text-zinc-400 leading-relaxed">
@@ -82,7 +82,7 @@ export default function Footer() {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-full bg-zinc-800 p-2 hover:bg-[#CBA135] transition-colors"
+                  className="rounded-full bg-zinc-800 p-2 hover:bg-[#4a7c2e] transition-colors"
                   aria-label={social.name}
                 >
                   <social.icon className="h-4 w-4 sm:h-5 sm:w-5" />
@@ -93,7 +93,7 @@ export default function Footer() {
 
           {/* Services Links */}
           <div>
-            <h3 className="text-xs sm:text-sm font-bold text-[#CBA135] uppercase tracking-wider">
+            <h3 className="text-xs sm:text-sm font-bold text-[#6ba547] uppercase tracking-wider">
               Dịch Vụ
             </h3>
             <ul className="mt-3 sm:mt-4 space-y-2 sm:space-y-3">
@@ -101,7 +101,7 @@ export default function Footer() {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-sm text-zinc-400 hover:text-[#CBA135] transition-colors"
+                    className="text-sm text-zinc-400 hover:text-[#6ba547] transition-colors"
                   >
                     {link.name}
                   </Link>
@@ -112,7 +112,7 @@ export default function Footer() {
 
           {/* Info Links */}
           <div>
-            <h3 className="text-sm font-bold text-[#CBA135] uppercase tracking-wider">
+            <h3 className="text-sm font-bold text-[#6ba547] uppercase tracking-wider">
               Thông Tin
             </h3>
             <ul className="mt-4 space-y-3">
@@ -120,7 +120,7 @@ export default function Footer() {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-sm text-zinc-400 hover:text-[#CBA135] transition-colors"
+                    className="text-sm text-zinc-400 hover:text-[#6ba547] transition-colors"
                   >
                     {link.name}
                   </Link>
@@ -131,36 +131,36 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-sm font-bold text-[#CBA135] uppercase tracking-wider">
+            <h3 className="text-sm font-bold text-[#6ba547] uppercase tracking-wider">
               Liên Hệ
             </h3>
             <ul className="mt-4 space-y-3">
               <li className="flex items-start gap-3">
-                <MapPin className="h-5 w-5 text-[#CBA135] flex-shrink-0 mt-0.5" />
+                <MapPin className="h-5 w-5 text-[#6ba547] flex-shrink-0 mt-0.5" />
                 <span className="text-sm text-zinc-400">
-                  123 Nguyễn Huệ, Quận 1, TP.HCM
+                  06 Bàu Học 1, Thanh Khê, Đà Nẵng
                 </span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="h-5 w-5 text-[#CBA135]" />
+                <Phone className="h-5 w-5 text-[#6ba547]" />
                 <a
-                  href="tel:+84901234567"
-                  className="text-sm text-zinc-400 hover:text-[#CBA135] transition-colors"
+                  href="tel:+84862803268"
+                  className="text-sm text-zinc-400 hover:text-[#6ba547] transition-colors"
                 >
-                  0901 234 567
+                  0862.803.268
                 </a>
               </li>
               <li className="flex items-center gap-3">
-                <Mail className="h-5 w-5 text-[#CBA135]" />
+                <Mail className="h-5 w-5 text-[#6ba547]" />
                 <a
-                  href="mailto:contact@scalpcarespa.vn"
-                  className="text-sm text-zinc-400 hover:text-[#CBA135] transition-colors"
+                  href="mailto:contact@moorespa.vn"
+                  className="text-sm text-zinc-400 hover:text-[#6ba547] transition-colors"
                 >
-                  contact@scalpcarespa.vn
+                  contact@moorespa.vn
                 </a>
               </li>
               <li className="flex items-start gap-3">
-                <Clock className="h-5 w-5 text-[#CBA135] flex-shrink-0 mt-0.5" />
+                <Clock className="h-5 w-5 text-[#6ba547] flex-shrink-0 mt-0.5" />
                 <div className="text-sm text-zinc-400">
                   <div>T2-T7: 9:00 - 21:00</div>
                   <div>CN: 9:00 - 19:00</div>
@@ -173,7 +173,7 @@ export default function Footer() {
         {/* Map Section */}
         <div className="mt-12 rounded-xl overflow-hidden">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4967614083203!2d106.70295147570753!3d10.77625425894442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f4b3330bcc9%3A0x264f2d85d2f1df14!2zTmd1eeG7hW4gSHXhu4csIFF1YW4gMSwgSG8gQ2hpIE1pbmggQ2l0eSwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1736000000000!5m2!1sen!2s"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.0698814772877!2d108.20097767588536!3d16.05964098462378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219c6a6e7c0b9%3A0x1c4e9d3d2b3a4f5e!2zNiBCw6B1IEjhu41jIDEsIEhvw6AgSGFpLCBUaGFuaCBLaMOqLCDEkMOgIE7hurVuZw!5e0!3m2!1svi!2s!4v1699999999999!5m2!1svi!2s"
             width="100%"
             height="300"
             style={{ border: 0 }}
@@ -187,8 +187,8 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="mt-12 border-t border-zinc-800 pt-8">
           <p className="text-center text-sm text-zinc-500">
-            © 2025 Viêm Da Tiết Bã Đà Nẵng. All rights reserved. Designed with{" "}
-            <span className="text-[#CBA135]">♥</span> in Vietnam
+            © 2025 MOORE Spa Đà Nẵng. All rights reserved. Designed with{" "}
+            <span className="text-[#6ba547]">♥</span> in Vietnam
           </p>
         </div>
       </div>

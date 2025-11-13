@@ -27,11 +27,11 @@ export default function ServicesPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <div className="inline-block bg-[#CBA135]/20 text-[#CBA135] px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-bold mb-3 sm:mb-4">
+            <div className="inline-block bg-[#6ba547]/20 text-[#6ba547] px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-bold mb-3 sm:mb-4">
               DỊCH VỤ CHĂM SÓC DA ĐẦU
             </div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white mb-4 sm:mb-6">
-              Dịch Vụ <span className="text-[#CBA135]">Chăm Sóc Da Đầu</span>
+              Dịch Vụ <span className="text-[#6ba547]">Chăm Sóc Da Đầu</span>
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-zinc-300 max-w-2xl mx-auto px-4">
               Từ điều trị gàu, nấm đến kích thích mọc tóc tự nhiên. Chúng tôi
@@ -52,10 +52,11 @@ export default function ServicesPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1, duration: 0.5 }}
+                className="h-full"
               >
-                <Card className="group hover:shadow-2xl transition-all duration-300 overflow-hidden border-2 border-transparent hover:border-[#CBA135]">
+                <Card className="group hover:shadow-2xl transition-all duration-300 overflow-hidden border-2 border-transparent hover:border-[#4a7c2e] h-full flex flex-col">
                   {/* Service Image */}
-                  <div className="relative h-48 sm:h-56 md:h-64 overflow-hidden">
+                  <div className="relative h-48 sm:h-56 md:h-64 overflow-hidden flex-shrink-0">
                     <Image
                       src={service.image}
                       alt={service.name}
@@ -67,24 +68,20 @@ export default function ServicesPage() {
                       <div
                         className={`absolute top-3 sm:top-4 right-3 sm:right-4 px-2.5 sm:px-3 py-1 rounded-full text-xs font-bold ${
                           service.tag === "Best Seller"
-                            ? "bg-[#CBA135] text-[#111111]"
-                            : "bg-[#8B0000] text-white"
+                            ? "bg-[#4a7c2e] text-white"
+                            : service.tag === "Hot Trend"
+                            ? "bg-[#6ba547] text-white"
+                            : "bg-[#2d5016] text-white"
                         }`}
                       >
                         {service.tag}
                       </div>
                     )}
-                    {/* Discount Badge */}
-                    {service.discount && (
-                      <div className="absolute top-3 sm:top-4 left-3 sm:left-4 bg-red-600 text-white px-2.5 sm:px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1">
-                        <Tag className="h-3 w-3" />-{service.discount}
-                      </div>
-                    )}
                   </div>
 
-                  <CardContent className="p-4 sm:p-5 md:p-6">
+                  <CardContent className="p-4 sm:p-5 md:p-6 flex flex-col flex-grow">
                     {/* Service Name */}
-                    <h3 className="text-xl sm:text-2xl font-bold text-[#111111] mb-1 sm:mb-2 group-hover:text-[#CBA135] transition-colors">
+                    <h3 className="text-xl sm:text-2xl font-bold text-[#111111] mb-1 sm:mb-2 group-hover:text-[#4a7c2e] transition-colors">
                       {service.name}
                     </h3>
                     <p className="text-xs sm:text-sm text-zinc-500 mb-2 sm:mb-3">
@@ -92,7 +89,7 @@ export default function ServicesPage() {
                     </p>
 
                     {/* Description */}
-                    <p className="text-sm sm:text-base text-zinc-600 mb-3 sm:mb-4 leading-relaxed line-clamp-3">
+                    <p className="text-sm sm:text-base text-zinc-600 mb-3 sm:mb-4 leading-relaxed line-clamp-3 flex-grow">
                       {service.description}
                     </p>
 
@@ -102,12 +99,7 @@ export default function ServicesPage() {
                         <div className="text-xs sm:text-sm text-zinc-500">
                           Giá
                         </div>
-                        {service.originalPrice && (
-                          <div className="text-xs text-zinc-400 line-through">
-                            {service.originalPrice}
-                          </div>
-                        )}
-                        <div className="text-base sm:text-lg font-bold text-[#CBA135]">
+                        <div className="text-base sm:text-lg font-bold text-[#4a7c2e]">
                           {service.price}
                         </div>
                       </div>
@@ -131,7 +123,7 @@ export default function ServicesPage() {
                               key={idx}
                               className="flex items-center gap-2 text-xs sm:text-sm text-zinc-600"
                             >
-                              <Sparkles className="h-3 w-3 text-[#CBA135] flex-shrink-0" />
+                              <Sparkles className="h-3 w-3 text-[#4a7c2e] flex-shrink-0" />
                               <span>{feature}</span>
                             </li>
                           ))}
@@ -182,7 +174,7 @@ export default function ServicesPage() {
                 variant="outline"
                 className="text-sm sm:text-base px-8 sm:px-10 w-full sm:w-auto"
               >
-                <Link href="tel:+84901234567">Gọi Ngay: 0901 234 567</Link>
+                <Link href="tel:+84862803268">Gọi Ngay: 0862.803.268</Link>
               </Button>
             </div>
           </motion.div>

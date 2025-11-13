@@ -42,16 +42,16 @@ export default function AboutSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <div className="inline-block bg-[#CBA135]/10 text-[#CBA135] px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-bold mb-3 sm:mb-4">
+            <div className="inline-block bg-[#6ba547]/10 text-[#4a7c2e] px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-bold mb-3 sm:mb-4">
               VỀ CHÚNG TÔI
             </div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#111111] mb-4 sm:mb-6">
-              Viêm Da Tiết Bã Đà Nẵng - Chăm Sóc Da Đầu{" "}
-              <span className="text-[#CBA135]">Chuyên Sâu</span>
+              MOORE Spa Đà Nẵng - Chăm Sóc Da Đầu{" "}
+              <span className="text-[#4a7c2e]">Chuyên Sâu</span>
             </h2>
             <p className="text-zinc-600 text-base sm:text-lg leading-relaxed mb-4 sm:mb-6">
-              Với hơn 10 năm kinh nghiệm trong lĩnh vực chăm sóc da đầu, Viêm Da
-              Tiết Bã Đà Nẵng tự hào là trung tâm hàng đầu tại TP.HCM. Chúng tôi
+              Với hơn 10 năm kinh nghiệm trong lĩnh vực chăm sóc da đầu, MOORE
+              Spa Đà Nẵng tự hào là trung tâm hàng đầu tại Đà Nẵng. Chúng tôi
               chuyên điều trị các vấn đề về da đầu như gàu, nấm, ngứa và kích
               thích mọc tóc tự nhiên.
             </p>
@@ -72,7 +72,7 @@ export default function AboutSection() {
                   transition={{ delay: index * 0.1, duration: 0.5 }}
                   className="flex gap-2 sm:gap-3"
                 >
-                  <div className="flex-shrink-0 w-1.5 sm:w-2 h-1.5 sm:h-2 mt-1.5 sm:mt-2 bg-[#CBA135] rounded-full" />
+                  <div className="flex-shrink-0 w-1.5 sm:w-2 h-1.5 sm:h-2 mt-1.5 sm:mt-2 bg-[#4a7c2e] rounded-full" />
                   <div>
                     <h3 className="font-bold text-sm sm:text-base text-[#111111] mb-1">
                       {feature.title}
@@ -96,8 +96,8 @@ export default function AboutSection() {
                   transition={{ delay: index * 0.1, duration: 0.5 }}
                   className="text-center"
                 >
-                  <div className="inline-flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-[#CBA135]/10 rounded-full mb-2">
-                    <stat.icon className="h-5 w-5 sm:h-6 sm:w-6 text-[#CBA135]" />
+                  <div className="inline-flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-[#6ba547]/10 rounded-full mb-2">
+                    <stat.icon className="h-5 w-5 sm:h-6 sm:w-6 text-[#4a7c2e]" />
                   </div>
                   <div className="text-xl sm:text-2xl font-black text-[#111111] mb-1">
                     {stat.value}
@@ -161,7 +161,7 @@ export default function AboutSection() {
             <motion.div
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 3, repeat: Infinity }}
-              className="absolute -bottom-4 sm:-bottom-6 -left-4 sm:-left-6 bg-[#CBA135] text-[#111111] p-4 sm:p-6 rounded-xl sm:rounded-2xl shadow-2xl"
+              className="absolute -bottom-4 sm:-bottom-6 -left-4 sm:-left-6 bg-[#4a7c2e] text-white p-4 sm:p-6 rounded-xl sm:rounded-2xl shadow-2xl"
             >
               <div className="text-2xl sm:text-3xl font-black mb-1">10+</div>
               <div className="text-xs sm:text-sm font-semibold">

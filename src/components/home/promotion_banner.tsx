@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function PromotionBanner() {
   return (
-    <section className="relative bg-gradient-to-r from-[#8B0000] via-[#A00000] to-[#8B0000] py-16 overflow-hidden">
+    <section className="relative bg-gradient-to-r from-[#2d5016] via-[#4a7c2e] to-[#2d5016] py-16 overflow-hidden">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
@@ -20,7 +20,7 @@ export default function PromotionBanner() {
             repeat: Infinity,
             ease: "linear",
           }}
-          className="absolute -top-20 -left-20 w-64 h-64 bg-[#CBA135]/10 rounded-full blur-3xl"
+          className="absolute -top-20 -left-20 w-64 h-64 bg-[#6ba547]/10 rounded-full blur-3xl"
         />
         <motion.div
           animate={{
@@ -32,7 +32,7 @@ export default function PromotionBanner() {
             repeat: Infinity,
             ease: "linear",
           }}
-          className="absolute -bottom-20 -right-20 w-64 h-64 bg-[#CBA135]/10 rounded-full blur-3xl"
+          className="absolute -bottom-20 -right-20 w-64 h-64 bg-[#6ba547]/10 rounded-full blur-3xl"
         />
       </div>
 
@@ -48,7 +48,7 @@ export default function PromotionBanner() {
           <motion.div
             animate={{ y: [0, -10, 0] }}
             transition={{ duration: 2, repeat: Infinity }}
-            className="inline-flex items-center gap-2 bg-[#CBA135] text-[#111111] px-6 py-2 rounded-full font-bold text-sm mb-6"
+            className="inline-flex items-center gap-2 bg-[#6ba547] text-white px-6 py-2 rounded-full font-bold text-sm mb-6"
           >
             <Sparkles className="h-4 w-4" />
             <span>ƯU ĐÃI ĐẶC BIỆT</span>
@@ -63,9 +63,9 @@ export default function PromotionBanner() {
           {/* Discount Badge */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-6">
             <div className="flex items-center gap-2">
-              <Tag className="h-6 w-6 sm:h-8 sm:w-8 text-[#CBA135]" />
+              <Tag className="h-6 w-6 sm:h-8 sm:w-8 text-[#6ba547]" />
               <div className="text-left">
-                <div className="text-[#CBA135] text-xs sm:text-sm font-semibold">
+                <div className="text-[#6ba547] text-xs sm:text-sm font-semibold">
                   GIẢM NGAY
                 </div>
                 <div className="text-white text-2xl sm:text-3xl font-black">
@@ -78,7 +78,7 @@ export default function PromotionBanner() {
               <div className="text-zinc-300 text-sm line-through">
                 2.100.000đ
               </div>
-              <div className="text-[#CBA135] text-2xl sm:text-3xl font-black">
+              <div className="text-[#6ba547] text-2xl sm:text-3xl font-black">
                 1.500.000đ
               </div>
             </div>
@@ -87,7 +87,7 @@ export default function PromotionBanner() {
           <p className="text-white/90 text-base sm:text-lg mb-6 sm:mb-8 max-w-2xl mx-auto px-4">
             Đặt lịch ngay hôm nay để nhận ưu đãi độc quyền cho combo điều trị
             gàu và kích thích mọc tóc. Tiết kiệm{" "}
-            <span className="font-bold text-[#CBA135]">600.000đ</span> cho lần
+            <span className="font-bold text-[#6ba547]">600.000đ</span> cho lần
             điều trị đầu tiên!
           </p>
 
@@ -96,7 +96,7 @@ export default function PromotionBanner() {
             <Button
               asChild
               size="lg"
-              className="bg-[#CBA135] hover:bg-[#B39030] text-[#111111] font-black text-sm sm:text-base px-8 sm:px-10 py-5 sm:py-6 shadow-xl w-full sm:w-auto"
+              className="bg-[#6ba547] hover:bg-[#4a7c2e] text-white font-black text-sm sm:text-base px-8 sm:px-10 py-5 sm:py-6 shadow-xl w-full sm:w-auto"
             >
               <Link href="/booking">Nhận Ưu Đãi Ngay</Link>
             </Button>
@@ -104,7 +104,7 @@ export default function PromotionBanner() {
               asChild
               size="lg"
               variant="outline"
-              className="border-2 border-white text-white hover:bg-white hover:text-[#8B0000] font-bold text-sm sm:text-base px-8 sm:px-10 py-5 sm:py-6 w-full sm:w-auto"
+              className="border-2 border-white text-white hover:bg-white hover:text-[#2d5016] font-bold text-sm sm:text-base px-8 sm:px-10 py-5 sm:py-6 w-full sm:w-auto"
             >
               <Link href="/services">Xem Chi Tiết</Link>
             </Button>

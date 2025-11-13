@@ -29,11 +29,11 @@ export default function BlogPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <div className="inline-block bg-[#CBA135]/20 text-[#CBA135] px-4 py-2 rounded-full text-sm font-bold mb-4">
+            <div className="inline-block bg-[#6ba547]/20 text-[#4a7c2e] px-4 py-2 rounded-full text-sm font-bold mb-4">
               BLOG TÓC THỜI TRANG
             </div>
             <h1 className="text-5xl md:text-6xl font-black text-white mb-6">
-              Xu Hướng & <span className="text-[#CBA135]">Chia Sẻ</span>
+              Xu Hướng & <span className="text-[#6ba547]">Chia Sẻ</span>
             </h1>
             <p className="text-xl text-zinc-300 max-w-2xl mx-auto">
               Cập nhật xu hướng tóc mới nhất, mẹo chăm sóc và bí quyết từ chuyên
@@ -63,17 +63,17 @@ export default function BlogPage() {
                       fill
                       className="object-cover group-hover:scale-110 transition-transform duration-500"
                     />
-                    <div className="absolute top-4 left-4 bg-[#CBA135] text-[#111111] px-4 py-2 rounded-full text-sm font-bold">
+                    <div className="absolute top-4 left-4 bg-[#4a7c2e] text-white px-4 py-2 rounded-full text-sm font-bold">
                       BÀI VIẾT NỔI BẬT
                     </div>
                   </div>
 
                   {/* Content */}
                   <CardContent className="p-8 lg:p-12 flex flex-col justify-center">
-                    <div className="inline-block bg-[#CBA135]/10 text-[#CBA135] px-3 py-1 rounded-full text-sm font-semibold mb-4 w-fit">
+                    <div className="inline-block bg-[#6ba547]/10 text-[#4a7c2e] px-3 py-1 rounded-full text-sm font-semibold mb-4 w-fit">
                       {featuredPost.category}
                     </div>
-                    <h2 className="text-3xl md:text-4xl font-black text-[#111111] mb-4 group-hover:text-[#CBA135] transition-colors">
+                    <h2 className="text-3xl md:text-4xl font-black text-[#111111] mb-4 group-hover:text-[#4a7c2e] transition-colors">
                       {featuredPost.title}
                     </h2>
                     <p className="text-zinc-600 text-lg leading-relaxed mb-6">
@@ -110,7 +110,7 @@ export default function BlogPage() {
                       </div>
                     </div>
 
-                    <div className="flex items-center gap-2 text-[#CBA135] font-semibold group-hover:gap-4 transition-all">
+                    <div className="flex items-center gap-2 text-[#4a7c2e] font-semibold group-hover:gap-4 transition-all">
                       <span>Đọc tiếp</span>
                       <ArrowRight className="h-5 w-5" />
                     </div>
@@ -153,13 +153,13 @@ export default function BlogPage() {
                         fill
                         className="object-cover group-hover:scale-110 transition-transform duration-500"
                       />
-                      <div className="absolute top-4 left-4 bg-[#CBA135]/90 text-[#111111] px-3 py-1 rounded-full text-xs font-bold">
+                      <div className="absolute top-4 left-4 bg-[#4a7c2e]/90 text-white px-3 py-1 rounded-full text-xs font-bold">
                         {post.category}
                       </div>
                     </div>
 
                     <CardContent className="p-6">
-                      <h3 className="text-xl font-bold text-[#111111] mb-3 group-hover:text-[#CBA135] transition-colors line-clamp-2">
+                      <h3 className="text-xl font-bold text-[#111111] mb-3 group-hover:text-[#4a7c2e] transition-colors line-clamp-2">
                         {post.title}
                       </h3>
                       <p className="text-zinc-600 mb-4 line-clamp-3">

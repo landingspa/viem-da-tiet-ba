@@ -17,16 +17,16 @@ export default function TestimonialsSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12 sm:mb-16"
         >
-          <div className="inline-block bg-[#CBA135]/10 text-[#CBA135] px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-bold mb-3 sm:mb-4">
+          <div className="inline-block bg-[#6ba547]/10 text-[#4a7c2e] px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-bold mb-3 sm:mb-4">
             ĐÁNH GIÁ KHÁCH HÀNG
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#111111] mb-3 sm:mb-4">
             Khách Hàng Nói Gì Về{" "}
-            <span className="text-[#CBA135]">Chúng Tôi</span>
+            <span className="text-[#4a7c2e]">Chúng Tôi</span>
           </h2>
           <p className="text-zinc-600 text-base sm:text-lg max-w-2xl mx-auto px-4">
-            Hơn 15,000 khách hàng đã tin tưởng và hài lòng với dịch vụ của Viêm
-            Da Tiết Bã Đà Nẵng
+            Hơn 15,000 khách hàng đã tin tưởng và hài lòng với dịch vụ của MOORE
+            Spa Đà Nẵng
           </p>
         </motion.div>
 
@@ -42,7 +42,7 @@ export default function TestimonialsSection() {
               className="bg-white rounded-xl sm:rounded-2xl p-5 sm:p-6 shadow-lg hover:shadow-xl transition-shadow relative"
             >
               {/* Quote Icon */}
-              <div className="absolute top-4 sm:top-6 right-4 sm:right-6 text-[#CBA135]/10">
+              <div className="absolute top-4 sm:top-6 right-4 sm:right-6 text-[#6ba547]/10">
                 <Quote
                   className="h-12 w-12 sm:h-16 sm:w-16"
                   fill="currentColor"
@@ -54,7 +54,7 @@ export default function TestimonialsSection() {
                 {[...Array(testimonial.rating)].map((_, i) => (
                   <Star
                     key={i}
-                    className="h-4 w-4 sm:h-5 sm:w-5 text-[#CBA135] fill-[#CBA135]"
+                    className="h-4 w-4 sm:h-5 sm:w-5 text-[#4a7c2e] fill-[#4a7c2e]"
                   />
                 ))}
               </div>
@@ -65,7 +65,7 @@ export default function TestimonialsSection() {
               </p>
 
               {/* Service */}
-              <div className="inline-block bg-[#CBA135]/10 text-[#CBA135] px-2.5 sm:px-3 py-1 rounded-full text-xs font-semibold mb-3 sm:mb-4">
+              <div className="inline-block bg-[#6ba547]/10 text-[#4a7c2e] px-2.5 sm:px-3 py-1 rounded-full text-xs font-semibold mb-3 sm:mb-4">
                 {testimonial.service}
               </div>
 
@@ -112,7 +112,7 @@ export default function TestimonialsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.3, duration: 0.6 }}
-          className="mt-12 sm:mt-16 bg-gradient-to-r from-[#CBA135] to-[#B39030] rounded-xl sm:rounded-2xl p-6 sm:p-8 text-center"
+          className="mt-12 sm:mt-16 bg-gradient-to-r from-[#4a7c2e] to-[#6ba547] rounded-xl sm:rounded-2xl p-6 sm:p-8 text-center"
         >
           <div className="flex items-center justify-center gap-1.5 sm:gap-2 mb-3 sm:mb-4">
             {[...Array(5)].map((_, i) => (

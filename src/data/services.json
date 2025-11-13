@@ -1,166 +1,118 @@
 [
   {
     "id": "1",
-    "name": "Điều Trị Gàu Dầu",
-    "nameEn": "Dandruff Treatment - Oily Scalp",
-    "category": "dandruff",
+    "name": "Gội Thông Kinh Lạc Đầu",
+    "nameEn": "Stress Relief Head Massage & Wash",
+    "category": "basic",
     "gender": "unisex",
-    "description": "Điều trị gàu dầu chuyên sâu với công nghệ ion âm và serum thảo dược tự nhiên. Giảm gàu 90% sau 3-5 buổi điều trị.",
-    "price": "300.000đ - 600.000đ",
-    "duration": "60-90 phút",
+    "description": "Gội thông kinh lạc đầu giúp giảm stress, mệt mỏi, đau đầu gáy. Massage thư giãn kết hợp với serum thảo dược tự nhiên.",
+    "price": "199.000đ",
+    "duration": "45 phút",
     "image": "/dieutrigau.jpg",
     "tag": "Best Seller",
     "features": [
+      "Giảm stress, mệt mỏi",
       "Massage đầu thư giãn",
-      "Sử dụng serum thảo dược",
-      "Tư vấn chăm sóc tại nhà"
+      "Thảo dược tự nhiên"
     ]
   },
   {
     "id": "2",
-    "name": "Điều Trị Gàu Khô",
-    "nameEn": "Dandruff Treatment - Dry Scalp",
+    "name": "Gội Trị Liệu Gàu",
+    "nameEn": "Dandruff Treatment Wash",
     "category": "dandruff",
     "gender": "unisex",
-    "description": "Liệu trình chuyên biệt cho da đầu khô bong tróc. Cung cấp độ ẩm sâu, giảm gàu và ngứa ngáy hiệu quả.",
-    "price": "300.000đ - 600.000đ",
-    "duration": "60-90 phút",
+    "description": "Gội trị liệu gàu cho da đầu bị kiểm dầu, gàu ít, gàu liti mảng nhỏ, kô viêm. Làm sạch da đầu và giảm gàu hiệu quả.",
+    "price": "150.000đ",
+    "duration": "30 phút",
     "image": "https://trungtamthuocdantoc.com/wp-content/uploads/2022/10/gau-va-nam-da-dau-1.jpg",
-    "tag": "Hot Trend",
-    "features": [
-      "Dưỡng ẩm sâu da đầu",
-      "Giảm bong tróc",
-      "Cân bằng độ ẩm tự nhiên"
-    ]
+    "tag": "",
+    "features": ["Kiểm soát dầu nhờn", "Giảm gàu ít", "Làm sạch da đầu"]
   },
   {
     "id": "3",
-    "name": "Trị Nấm Da Đầu",
-    "nameEn": "Scalp Fungus Treatment",
-    "category": "fungus",
+    "name": "Gội Trị Gàu Chuyên Sâu",
+    "nameEn": "Deep Dandruff Treatment",
+    "category": "dandruff",
     "gender": "unisex",
-    "description": "Điều trị nấm da đầu bằng liệu pháp ánh sáng xanh kết hợp serum kháng nấm sinh học. An toàn, không tái phát.",
-    "price": "500.000đ - 900.000đ",
-    "duration": "90-120 phút",
-    "image": "https://cdn.tgdd.vn/News/1548934/12-cach-tri-nam-da-dau-tai-nha-hieu-qua-triet-de-ngan-ngua-tai-phat-(8)-800x450.jpg",
+    "description": "Gội trị gàu chuyên sâu cho tình trạng gàu nhiều, mảng to. Điều trị chuyên sâu với công nghệ hiện đại.",
+    "price": "300.000đ",
+    "duration": "60 phút",
+    "image": "/dieutrigau.jpg",
     "tag": "Hot Trend",
-    "features": [
-      "Công nghệ ánh sáng xanh",
-      "Serum kháng nấm sinh học",
-      "Bảo hành 3 tháng"
-    ]
+    "features": ["Điều trị gàu nhiều", "Xử lý mảng to", "Công nghệ hiện đại"]
   },
   {
     "id": "4",
-    "name": "Trị Ngứa Da Đầu",
-    "nameEn": "Itchy Scalp Treatment",
-    "category": "itchy",
+    "name": "Thải Độc Tố Da Đầu Cơ Bản",
+    "nameEn": "Basic Scalp Detox",
+    "category": "detox",
     "gender": "unisex",
-    "description": "Giải pháp hiệu quả cho da đầu ngứa ngáy, kích ứng. Làm dịu tức thì với tinh dầu bạc hà và lô hội.",
-    "price": "250.000đ - 500.000đ",
-    "duration": "45-60 phút",
+    "description": "Thải độc tố da đầu cơ bản giúp loại bỏ bã nhờn, tế bào chết và độc tố tích tụ. Làm sạch sâu da đầu.",
+    "price": "500.000đ",
+    "duration": "60 phút",
     "image": "https://medlatec.vn/media/10310/content/20210708_nguyen-nhan-gay-ngua-da-dau-1.jpg",
     "tag": "",
-    "features": [
-      "Làm dịu ngay lập tức",
-      "Tinh dầu thiên nhiên",
-      "Không gây kích ứng"
-    ]
+    "features": ["Loại bỏ bã nhờn", "Thải độc tố", "Làm sạch sâu"]
   },
   {
     "id": "5",
-    "name": "Kích Thích Mọc Tóc Natural Volume",
-    "nameEn": "Natural Hair Growth Volume",
-    "category": "growth",
+    "name": "Thải Độc Tố Chuyên Sâu",
+    "nameEn": "Deep Scalp Detox",
+    "category": "detox",
     "gender": "unisex",
-    "description": "Liệu trình kích thích mọc tóc tự nhiên với công nghệ PRP kết hợp tinh chất bưởi và gừng. Tăng độ dày 40% sau 3 tháng.",
-    "price": "800.000đ - 1.500.000đ",
-    "duration": "90-120 phút",
-    "image": "https://trungtamdalieuhaiphong.vn/upload/1001915/fck/files/2024_10_23_07_51_491_345d3.png",
+    "description": "Thải độc tố chuyên sâu với liệu trình toàn diện, kết hợp massage và serum đặc biệt. Phục hồi da đầu tổng thể.",
+    "price": "1.000.000đ",
+    "duration": "90 phút",
+    "image": "https://icarepharma.com.vn/wp-content/uploads/2021/07/5fa6c1019ad1b458cc6c8af2_viem-da-tiet-ba.jpg",
     "tag": "Best Seller",
     "features": [
-      "Công nghệ PRP",
-      "Tinh chất thảo dược",
-      "Liệu trình 10-15 buổi"
+      "Liệu trình toàn diện",
+      "Massage chuyên sâu",
+      "Phục hồi da đầu"
     ]
   },
   {
     "id": "6",
-    "name": "Điều Trị Viêm Da Tiết Bã",
-    "nameEn": "Seborrheic Dermatitis Treatment",
+    "name": "Điều Trị Gàu Ngứa Chuyên Sâu",
+    "nameEn": "Deep Anti-Dandruff & Anti-Itch Treatment",
     "category": "treatment",
     "gender": "unisex",
-    "description": "Điều trị chuyên sâu viêm da tiết bã, da đầu đỏ, ngứa và bong tróc. Phương pháp y học kết hợp thảo dược.",
-    "price": "600.000đ - 1.200.000đ",
-    "duration": "90-120 phút",
-    "image": "https://icarepharma.com.vn/wp-content/uploads/2021/07/5fa6c1019ad1b458cc6c8af2_viem-da-tiet-ba.jpg",
+    "description": "Điều trị chuyên sâu cho da đầu bị gàu ngứa nghiêm trọng. Liệu pháp y học kết hợp thảo dược hiệu quả cao.",
+    "price": "1.500.000đ",
+    "duration": "90 phút",
+    "image": "https://cdn.tgdd.vn/News/1548934/12-cach-tri-nam-da-dau-tai-nha-hieu-qua-triet-de-ngan-ngua-tai-phat-(8)-800x450.jpg",
     "tag": "Hot Trend",
     "features": [
       "Điều trị chuyên sâu",
-      "Kết hợp y học & thảo dược",
-      "Theo dõi định kỳ"
+      "Giảm gàu ngứa nhanh",
+      "Y học kết hợp thảo dược"
     ]
   },
   {
     "id": "7",
-    "name": "Detox Da Đầu",
-    "nameEn": "Scalp Detox",
+    "name": "Điều Trị Gàu Nấm Ngứa Chuyên Sâu",
+    "nameEn": "Deep Anti-Dandruff Fungus Treatment",
     "category": "treatment",
     "gender": "unisex",
-    "description": "Thải độc da đầu, loại bỏ bã nhờn, tế bào chết. Da đầu sạch sẽ, thông thoáng, tóc mềm mượt óng ả.",
-    "price": "400.000đ - 700.000đ",
-    "duration": "60-90 phút",
-    "image": "https://cdn.nhathuoclongchau.com.vn/unsafe/800x0/detox_da_dau_la_gi_va_mang_lai_nhung_loi_ich_gi_1_42608ab34a.png",
-    "tag": "",
-    "features": ["Detox sâu", "Massage thư giãn", "Tăng tuần hoàn máu"]
+    "description": "Điều trị gàu nấm ngứa chuyên sâu kết hợp liệu trình giảm rụng và kích mọc tóc. Giải pháp toàn diện cho da đầu.",
+    "price": "2.000.000đ",
+    "duration": "120-180 phút",
+    "image": "https://trungtamdalieuhaiphong.vn/upload/1001915/fck/files/2024_10_23_07_51_491_345d3.png",
+    "tag": "Premium",
+    "features": ["Trị gàu nấm ngứa", "Giảm rụng tóc", "Kích thích mọc tóc"]
   },
   {
     "id": "8",
-    "name": "Phục Hồi Tóc Hư Tổn",
-    "nameEn": "Hair Damage Recovery",
-    "category": "recovery",
+    "name": "Điều Trị Giảm Rụng Kích Mọc",
+    "nameEn": "Hair Loss Prevention & Growth Treatment",
+    "category": "growth",
     "gender": "unisex",
-    "description": "Phục hồi tóc yếu, gãy rụng do hóa chất. Bổ sung Keratin, Collagen và Protein thực vật.",
-    "price": "500.000đ - 900.000đ",
-    "duration": "75-90 phút",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo275iqMR7lm2P_QGIbQVU0Co_js9nSpM1PA&s",
-    "tag": "",
-    "features": ["Keratin & Collagen", "Phục hồi sâu", "Tăng độ bền tóc"]
-  },
-  {
-    "id": "9",
-    "name": "Combo Trị Gàu + Kích Mọc Tóc",
-    "nameEn": "Dandruff Treatment + Hair Growth Combo",
-    "category": "combo",
-    "gender": "unisex",
-    "description": "Combo tiết kiệm: Điều trị gàu + Kích thích mọc tóc. Giải quyết toàn diện vấn đề da đầu và tóc thưa.",
-    "price": "1.500.000đ",
-    "originalPrice": "2.100.000đ",
-    "duration": "120-150 phút",
-    "image": "https://familyshopping.com.vn/wp-content/uploads/2024/03/thumnail-3.jpg",
-    "tag": "Best Seller",
-    "discount": "30%",
-    "features": [
-      "Tiết kiệm 600.000đ",
-      "Hiệu quả tổng hợp",
-      "Tặng sản phẩm chăm sóc"
-    ]
-  },
-  {
-    "id": "10",
-    "name": "Chăm Sóc Da Đầu Cao Cấp",
-    "nameEn": "Premium Scalp Care",
-    "category": "premium",
-    "gender": "unisex",
-    "description": "Liệu trình chăm sóc da đầu 5 sao với công nghệ hiện đại nhất. Phân tích da đầu bằng camera, điều trị cá nhân hóa.",
-    "price": "1.200.000đ - 2.000.000đ",
+    "description": "Liệu trình điều trị giảm rụng và kích thích mọc tóc với công nghệ tiên tiến. Phục hồi nang tóc và tăng độ dày tóc.",
+    "price": "2.000.000đ - 5.000.000đ",
     "duration": "120-180 phút",
-    "image": "https://cdn.nhathuoclongchau.com.vn/unsafe/800x0/cham_soc_da_dau_1_cd3743a3ac.png",
-    "tag": "",
-    "features": [
-      "Phân tích da đầu camera",
-      "Điều trị cá nhân hóa",
-      "Tư vấn chuyên gia"
-    ]
+    "image": "https://trungtamdalieuhaiphong.vn/upload/1001915/fck/files/2024_10_23_07_51_491_345d3.png",
+    "tag": "Premium",
+    "features": ["Giảm rụng tóc", "Kích thích mọc tóc", "Tăng độ dày tóc"]
   }
 ]

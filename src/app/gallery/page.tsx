@@ -51,11 +51,11 @@ export default function GalleryPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <div className="inline-block bg-[#CBA135]/20 text-[#CBA135] px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-bold mb-3 sm:mb-4">
+            <div className="inline-block bg-[#6ba547]/20 text-[#6ba547] px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-bold mb-3 sm:mb-4">
               ALBUM KẾT QUẢ
             </div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white mb-4 sm:mb-6">
-              Kết Quả <span className="text-[#CBA135]">Điều Trị</span>
+              Kết Quả <span className="text-[#6ba547]">Điều Trị</span>
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-zinc-300 max-w-2xl mx-auto px-4">
               Khám phá hàng trăm ca điều trị thành công được thực hiện bởi đội
@@ -79,7 +79,7 @@ export default function GalleryPage() {
                   onClick={() => setSelectedCategory(category.id)}
                   className={`flex-shrink-0 px-3 sm:px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold transition-all whitespace-nowrap ${
                     selectedCategory === category.id
-                      ? "bg-[#CBA135] text-[#111111] shadow-lg"
+                      ? "bg-[#4a7c2e] text-white shadow-lg"
                       : "bg-zinc-100 text-zinc-600 hover:bg-zinc-200"
                   }`}
                 >
@@ -97,7 +97,7 @@ export default function GalleryPage() {
                   onClick={() => setSelectedOccasion(occasion.id)}
                   className={`flex-shrink-0 px-3 sm:px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold transition-all whitespace-nowrap ${
                     selectedOccasion === occasion.id
-                      ? "bg-[#CBA135] text-[#111111] shadow-lg"
+                      ? "bg-[#4a7c2e] text-white shadow-lg"
                       : "bg-zinc-100 text-zinc-600 hover:bg-zinc-200"
                   }`}
                 >
@@ -108,7 +108,7 @@ export default function GalleryPage() {
 
             {/* Right: Results Count */}
             <div className="flex-shrink-0 text-xs sm:text-sm text-zinc-500 whitespace-nowrap">
-              <span className="font-bold text-[#CBA135]">
+              <span className="font-bold text-[#4a7c2e]">
                 {filteredGallery.length}
               </span>{" "}
               kết quả
