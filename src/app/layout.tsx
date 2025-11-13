@@ -12,14 +12,16 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "HairZone - Salon Tóc Thời Trang | Cắt Uốn Nhuộm Chuyên Nghiệp",
+  title:
+    "Viêm Da Tiết Bã - Chăm Sóc Da Đầu Chuyên Sâu | Điều Trị Gàu, Nấm, Kích Mọc Tóc",
   description:
-    "HairZone - Salon tóc thời trang hàng đầu với đội ngũ stylist chuyên nghiệp. Dịch vụ cắt tóc, nhuộm, uốn, duỗi, phục hồi tóc. Đặt lịch ngay!",
+    "Viêm Da Tiết Bã - Trung tâm chăm sóc da đầu hàng đầu với đội ngũ bác sĩ và chuyên gia. Dịch vụ điều trị gàu, nấm, ngứa da đầu, kích thích mọc tóc Natural Volume. Đặt lịch ngay!",
   keywords:
-    "salon tóc, cắt tóc, nhuộm tóc, uốn tóc, hair salon, hair zone, stylist",
+    "spa da đầu, chăm sóc da đầu, điều trị gàu, nấm da đầu, ngứa da đầu, kích thích mọc tóc, natural volume, scalp care, spa",
   openGraph: {
-    title: "HairZone - Salon Tóc Thời Trang",
-    description: "Salon tóc chuyên nghiệp với phong cách hiện đại, sang trọng",
+    title: "Viêm Da Tiết Bã - Chăm Sóc Da Đầu Chuyên Sâu",
+    description:
+      "Spa da đầu chuyên nghiệp với công nghệ hiện đại và liệu pháp thảo dược tự nhiên",
     type: "website",
     locale: "vi_VN",
   },

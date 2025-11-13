@@ -61,7 +61,7 @@ export default function BookingPage() {
 💰 Giá: ${selectedServiceData?.price || ""}
 ⏱️ Thời gian thực hiện: ${selectedServiceData?.duration || ""}
 
-✂️ Stylist: ${selectedStylistData?.name || "Chưa chọn"}
+👨‍⚕️ Chuyên gia: ${selectedStylistData?.name || "Chưa chọn"}
 🎖️ Chức vụ: ${selectedStylistData?.role || ""}
 
 📅 Ngày hẹn: ${formData.date}
@@ -78,16 +78,16 @@ export default function BookingPage() {
         },
         body: JSON.stringify({
           name: formData.name,
-          email: formData.email || "no-reply@hairzone.vn",
+          email: formData.email || "no-reply@scalpcarespa.vn",
           phone: formData.phone,
           message: bookingMessage,
           subject: `Đặt lịch mới từ ${formData.name} - ${formData.date} ${formData.time}`,
           adminEmail:
-            process.env.NEXT_PUBLIC_ADMIN_EMAIL || "contact@hairzone.vn",
-          adminName: "Hair Zone Admin",
-          companyName: "Hair Zone",
-          projectName: "Hair Zone - Salon Làm Tóc",
-          serviceName: selectedServiceData?.name || "dịch vụ làm tóc",
+            process.env.NEXT_PUBLIC_ADMIN_EMAIL || "contact@scalpcarespa.vn",
+          adminName: "Viêm Da Tiết Bã Đà Nẵng Admin",
+          companyName: "Viêm Da Tiết Bã Đà Nẵng",
+          projectName: "Viêm Da Tiết Bã Đà Nẵng - Chăm Sóc Da Đầu",
+          serviceName: selectedServiceData?.name || "dịch vụ chăm sóc da đầu",
         }),
       });
 
@@ -144,7 +144,7 @@ export default function BookingPage() {
       <section className="relative bg-[#111111] py-12 sm:py-16 md:py-20 overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1560869713-7d0a29430803?w=1920"
+            src="https://images.unsplash.com/photo-1522338140262-f46f5913618a?w=1920"
             alt="Booking background"
             fill
             className="object-cover opacity-20"
@@ -160,10 +160,10 @@ export default function BookingPage() {
               ĐẶT LỊCH NHANH
             </div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white mb-4 sm:mb-6">
-              Đặt Lịch <span className="text-[#CBA135]">Làm Tóc</span>
+              Đặt Lịch <span className="text-[#CBA135]">Điều Trị</span>
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-zinc-300 max-w-2xl mx-auto px-4">
-              Chọn dịch vụ và stylist yêu thích, đặt lịch chỉ trong vài phút
+              Chọn dịch vụ và chuyên gia yêu thích, đặt lịch chỉ trong vài phút
             </p>
           </motion.div>
         </div>
@@ -212,7 +212,7 @@ export default function BookingPage() {
                     {/* Stylist Selection */}
                     <div>
                       <label className="block text-xs sm:text-sm font-bold text-[#111111] mb-2 sm:mb-3">
-                        Chọn Stylist <span className="text-red-500">*</span>
+                        Chọn Chuyên Gia <span className="text-red-500">*</span>
                       </label>
                       <div className="grid sm:grid-cols-2 gap-2 sm:gap-3">
                         {stylists.map((stylist) => (
@@ -412,7 +412,9 @@ export default function BookingPage() {
                   {/* Selected Stylist */}
                   {selectedStylistData && (
                     <div className="mb-4 pb-4 border-b border-zinc-100">
-                      <div className="text-sm text-zinc-500 mb-2">Stylist</div>
+                      <div className="text-sm text-zinc-500 mb-2">
+                        Chuyên Gia
+                      </div>
                       <div className="flex items-center gap-3">
                         <div className="relative w-12 h-12 rounded-full overflow-hidden">
                           <Image
@@ -444,7 +446,7 @@ export default function BookingPage() {
                     </div>
                     <div className="text-sm text-zinc-600 space-y-1">
                       <div>Hotline: 0901 234 567</div>
-                      <div>Email: contact@hairzone.vn</div>
+                      <div>Email: contact@scalpcarespa.vn</div>
                     </div>
                   </div>
                 </CardContent>

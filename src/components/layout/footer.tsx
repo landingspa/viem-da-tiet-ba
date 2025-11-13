@@ -14,14 +14,14 @@ import { motion } from "framer-motion";
 
 const footerLinks = {
   services: [
-    { name: "Cắt Tóc Nam", href: "/services#men" },
-    { name: "Cắt Tóc Nữ", href: "/services#women" },
-    { name: "Nhuộm Tóc", href: "/services#coloring" },
-    { name: "Uốn & Duỗi", href: "/services#styling" },
+    { name: "Điều Trị Gàu", href: "/services#dandruff" },
+    { name: "Trị Nấm Da Đầu", href: "/services#fungus" },
+    { name: "Trị Ngứa Da Đầu", href: "/services#itchy" },
+    { name: "Kích Thích Mọc Tóc", href: "/services#growth" },
   ],
   info: [
     { name: "Về Chúng Tôi", href: "/about" },
-    { name: "Stylist", href: "/stylists" },
+    { name: "Chuyên Gia", href: "/stylists" },
     { name: "Album Ảnh", href: "/gallery" },
     { name: "Blog", href: "/blog" },
   ],
@@ -36,17 +36,17 @@ const footerLinks = {
 const socialLinks = [
   {
     name: "Facebook",
-    href: "https://facebook.com/hairzone",
+    href: "https://facebook.com/scalpcarespa",
     icon: Facebook,
   },
   {
     name: "Instagram",
-    href: "https://instagram.com/hairzone",
+    href: "https://instagram.com/scalpcarespa",
     icon: Instagram,
   },
   {
     name: "Youtube",
-    href: "https://youtube.com/@hairzone",
+    href: "https://youtube.com/@scalpcarespa",
     icon: Youtube,
   },
 ];
@@ -65,13 +65,13 @@ export default function Footer() {
                 viewport={{ once: true }}
                 className="text-xl sm:text-2xl font-black"
               >
-                <span className="text-[#CBA135]">HAIR</span>
-                <span className="text-white">ZONE</span>
+                <span className="text-[#CBA135]">SCALP</span>
+                <span className="text-white">CARE SPA</span>
               </motion.div>
             </Link>
             <p className="mt-3 sm:mt-4 text-xs sm:text-sm text-zinc-400 leading-relaxed">
-              Salon tóc thời trang hàng đầu với đội ngũ stylist chuyên nghiệp.
-              Mang đến phong cách hiện đại, sang trọng cho khách hàng.
+              Spa chăm sóc da đầu chuyên sâu với đội ngũ chuyên gia giàu kinh
+              nghiệm. Điều trị gàu, nấm, ngứa và kích thích mọc tóc tự nhiên.
             </p>
 
             {/* Social Links */}
@@ -153,10 +153,10 @@ export default function Footer() {
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-[#CBA135]" />
                 <a
-                  href="mailto:contact@hairzone.vn"
+                  href="mailto:contact@scalpcarespa.vn"
                   className="text-sm text-zinc-400 hover:text-[#CBA135] transition-colors"
                 >
-                  contact@hairzone.vn
+                  contact@scalpcarespa.vn
                 </a>
               </li>
               <li className="flex items-start gap-3">
@@ -187,7 +187,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="mt-12 border-t border-zinc-800 pt-8">
           <p className="text-center text-sm text-zinc-500">
-            © 2025 HairZone Salon. All rights reserved. Designed with{" "}
+            © 2025 Viêm Da Tiết Bã Đà Nẵng. All rights reserved. Designed with{" "}
             <span className="text-[#CBA135]">♥</span> in Vietnam
           </p>
         </div>

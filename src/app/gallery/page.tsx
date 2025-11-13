@@ -39,7 +39,7 @@ export default function GalleryPage() {
       <section className="relative bg-[#111111] py-12 sm:py-16 md:py-20 overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=1920"
+            src="https://images.unsplash.com/photo-1519415943484-9fa1873496d4?w=1920"
             alt="Gallery background"
             fill
             className="object-cover opacity-20"
@@ -52,14 +52,14 @@ export default function GalleryPage() {
             transition={{ duration: 0.6 }}
           >
             <div className="inline-block bg-[#CBA135]/20 text-[#CBA135] px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-bold mb-3 sm:mb-4">
-              ALBUM KIỂU TÓC
+              ALBUM KẾT QUẢ
             </div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white mb-4 sm:mb-6">
-              Bộ Sưu Tập <span className="text-[#CBA135]">Kiểu Tóc</span>
+              Kết Quả <span className="text-[#CBA135]">Điều Trị</span>
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-zinc-300 max-w-2xl mx-auto px-4">
-              Khám phá hàng trăm kiểu tóc thời trang được thực hiện bởi đội ngũ
-              stylist chuyên nghiệp
+              Khám phá hàng trăm ca điều trị thành công được thực hiện bởi đội
+              ngũ chuyên gia chăm sóc da đầu
             </p>
           </motion.div>
         </div>
@@ -163,7 +163,7 @@ export default function GalleryPage() {
           {filteredGallery.length === 0 && (
             <div className="text-center py-20">
               <p className="text-zinc-500 text-lg">
-                Không tìm thấy kiểu tóc phù hợp. Vui lòng thử lọc khác.
+                Không tìm thấy kết quả phù hợp. Vui lòng thử lọc khác.
               </p>
             </div>
           )}

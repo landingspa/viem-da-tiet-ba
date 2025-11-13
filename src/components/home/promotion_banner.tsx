@@ -57,7 +57,7 @@ export default function PromotionBanner() {
 
           {/* Main Heading */}
           <h2 className="text-3xl sm:text-4xl md:text-6xl font-black text-white mb-4">
-            COMBO CẮT + GỘI + UỐN
+            COMBO TRỊ GÀU + KÍCH MỌC TÓC
           </h2>
 
           {/* Discount Badge */}
@@ -76,19 +76,19 @@ export default function PromotionBanner() {
             <div className="h-px w-16 sm:h-16 sm:w-px bg-white/30" />
             <div className="text-center sm:text-left">
               <div className="text-zinc-300 text-sm line-through">
-                1.700.000đ
+                2.100.000đ
               </div>
               <div className="text-[#CBA135] text-2xl sm:text-3xl font-black">
-                1.200.000đ
+                1.500.000đ
               </div>
             </div>
           </div>
 
           <p className="text-white/90 text-base sm:text-lg mb-6 sm:mb-8 max-w-2xl mx-auto px-4">
-            Đặt lịch ngay hôm nay để nhận ưu đãi độc quyền cho combo cắt, gội và
-            uốn tóc. Tiết kiệm{" "}
-            <span className="font-bold text-[#CBA135]">500.000đ</span> cho lần
-            làm tóc đầu tiên!
+            Đặt lịch ngay hôm nay để nhận ưu đãi độc quyền cho combo điều trị
+            gàu và kích thích mọc tóc. Tiết kiệm{" "}
+            <span className="font-bold text-[#CBA135]">600.000đ</span> cho lần
+            điều trị đầu tiên!
           </p>
 
           {/* CTA Buttons */}

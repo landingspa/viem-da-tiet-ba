@@ -1,43 +1,44 @@
-# 💇 HairZone - Salon Tóc Thời Trang
+# � Viêm Da Tiết Bã Đà Nẵng - Chăm Sóc Da Đầu Chuyên Sâu
 
-Website mẫu chuyên nghiệp cho salon tóc, barber shop, và hair stylist. Thiết kế hiện đại, sang trọng với đầy đủ tính năng marketing và đặt lịch online.
+Website chuyên nghiệp cho spa chăm sóc da đầu, điều trị các vấn đề về da đầu và tóc. Thiết kế hiện đại, y khoa với đầy đủ tính năng marketing và đặt lịch online.
 
 ## ✨ Tính Năng Nổi Bật
 
 ### 🏠 Trang Chủ (Home)
 
-- **Hero Slider** - Carousel ảnh kiểu tóc nổi bật với animation mượt mà
-- **Banner Ưu Đãi** - Promotion combo "Cắt + Gội + Uốn giảm 30%"
-- **Giới Thiệu Salon** - Thông tin về salon, đội ngũ, kinh nghiệm
-- **Đánh Giá Khách Hàng** - Testimonials với ảnh và đánh giá 5 sao
+- **Hero Slider** - Carousel các dịch vụ điều trị da đầu nổi bật
+- **Banner Ưu Đãi** - Promotion combo "Trị Gàu + Kích Mọc Tóc giảm 30%"
+- **Giới Thiệu Spa** - Thông tin về spa, đội ngũ bác sĩ và chuyên gia
+- **Đánh Giá Khách Hàng** - Testimonials với kết quả điều trị thực tế
 - **Popup Khuyến Mãi** - Tự động hiện khi truy cập lần đầu
 
-### ✂️ Trang Dịch Vụ (Services)
+### 💊 Trang Dịch Vụ (Services)
 
-- Danh sách 10+ dịch vụ: Cắt, Nhuộm, Uốn, Duỗi, Phục hồi
-- Hiển thị: Ảnh, mô tả, giá, thời gian, tính năng
+- Danh sách 10+ dịch vụ: Điều trị gàu, Trị nấm, Trị ngứa, Kích mọc tóc
+- Hiển thị: Ảnh, mô tả, giá, thời gian, công nghệ điều trị
 - Tag đặc biệt: "Best Seller", "Hot Trend"
 - Badge giảm giá cho combo ưu đãi
 
-### 📸 Album Kiểu Tóc (Gallery)
+### 📸 Album Kết Quả (Gallery)
 
-- Bộ sưu tập 18+ ảnh kiểu tóc chất lượng cao
-- Filter theo giới tính và dịp
+- Bộ sưu tập ảnh before/after điều trị
+- Filter theo loại vấn đề
 - Masonry grid responsive
 - Lightbox xem ảnh full size
 
 ### 📅 Đặt Lịch (Booking)
 
 - Form đặt lịch thân thiện, dễ sử dụng
-- Chọn stylist với ảnh và thông tin chi tiết
-- Chọn dịch vụ, ngày giờ
+- Chọn chuyên gia với ảnh và chuyên môn
+- Chọn dịch vụ điều trị, ngày giờ
 - Thông báo đặt lịch thành công
 - Tích hợp Zalo/Messenger (mô phỏng)
 
 ### 📰 Blog
 
-- Bài viết xu hướng tóc 2025
-- Layout magazine hiện đại
+- Bài viết về chăm sóc da đầu
+- Kiến thức điều trị gàu, nấm, rụng tóc
+- Layout magazine y khoa chuyên nghiệp
 - Trang chi tiết bài viết với SEO-friendly
 - Nút chia sẻ Facebook, Zalo
 
@@ -76,7 +77,7 @@ npm start
 ## 📁 Cấu Trúc Dự Án
 
 ```
-hair-zone/
+scalpcare-spa/
 ├── src/
 │   ├── app/              # Pages (Next.js App Router)
 │   ├── components/       # React components
@@ -124,14 +125,15 @@ Chỉnh sửa các file JSON trong `src/data/`
 ✅ SEO optimized  
 ✅ Type-safe TypeScript  
 ✅ Modern UI/UX  
+✅ Medical-grade design  
 ✅ Production ready
 
 ## 📞 Demo Contact
 
 - **Địa chỉ:** 123 Nguyễn Huệ, Quận 1, TP.HCM
 - **Hotline:** 0901 234 567
-- **Email:** contact@hairzone.vn
+- **Email:** contact@scalpcarespa.vn
 
 ---
 
-**Developed with ❤️ by HairZone Team**
+**Developed with ❤️ by Viêm Da Tiết Bã Đà Nẵng Team**

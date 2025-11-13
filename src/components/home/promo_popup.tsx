@@ -11,7 +11,7 @@ export default function PromoPopup() {
 
   useEffect(() => {
     // Check if user has seen the popup in this session
-    const hasSeenPopup = sessionStorage.getItem("hairzone_promo_seen");
+    const hasSeenPopup = sessionStorage.getItem("scalpcare_promo_seen");
 
     if (!hasSeenPopup) {
       // Show popup after 2 seconds
@@ -25,11 +25,11 @@ export default function PromoPopup() {
 
   const handleClose = () => {
     setIsOpen(false);
-    sessionStorage.setItem("hairzone_promo_seen", "true");
+    sessionStorage.setItem("scalpcare_promo_seen", "true");
   };
 
   const handleClaim = () => {
-    sessionStorage.setItem("hairzone_promo_seen", "true");
+    sessionStorage.setItem("scalpcare_promo_seen", "true");
     setIsOpen(false);
   };
 
@@ -95,7 +95,9 @@ export default function PromoPopup() {
 
                 <h2 className="text-3xl md:text-4xl font-black text-white mb-4">
                   Chào Mừng Đến <br />
-                  <span className="text-[#CBA135]">HairZone</span>
+                  <span className="text-[#CBA135]">
+                    Viêm Da Tiết Bã Đà Nẵng
+                  </span>
                 </h2>
 
                 {/* Discount Circle */}
@@ -121,10 +123,10 @@ export default function PromoPopup() {
                 </motion.div>
 
                 <p className="text-white/90 text-lg mb-2">
-                  Cho lần làm tóc đầu tiên
+                  Cho lần điều trị đầu tiên
                 </p>
                 <p className="text-[#CBA135] font-bold text-xl mb-6">
-                  Combo Cắt + Gội + Uốn
+                  Combo Trị Gàu + Kích Mọc Tóc
                 </p>
 
                 <div className="space-y-3">

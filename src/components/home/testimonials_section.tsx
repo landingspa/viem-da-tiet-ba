@@ -25,8 +25,8 @@ export default function TestimonialsSection() {
             <span className="text-[#CBA135]">Chúng Tôi</span>
           </h2>
           <p className="text-zinc-600 text-base sm:text-lg max-w-2xl mx-auto px-4">
-            Hơn 15,000 khách hàng đã tin tưởng và hài lòng với dịch vụ của
-            HairZone
+            Hơn 15,000 khách hàng đã tin tưởng và hài lòng với dịch vụ của Viêm
+            Da Tiết Bã Đà Nẵng
           </p>
         </motion.div>
 

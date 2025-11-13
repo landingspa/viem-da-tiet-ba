@@ -15,7 +15,7 @@ export default function ServicesPage() {
       <section className="relative bg-[#111111] py-12 sm:py-16 md:py-20 overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1560869713-7d0a29430803?w=1920"
+            src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1920"
             alt="Services background"
             fill
             className="object-cover opacity-20"
@@ -28,14 +28,14 @@ export default function ServicesPage() {
             transition={{ duration: 0.6 }}
           >
             <div className="inline-block bg-[#CBA135]/20 text-[#CBA135] px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-bold mb-3 sm:mb-4">
-              DỊCH VỤ CHUYÊN NGHIỆP
+              DỊCH VỤ CHĂM SÓC DA ĐẦU
             </div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white mb-4 sm:mb-6">
-              Dịch Vụ <span className="text-[#CBA135]">Tóc Thời Trang</span>
+              Dịch Vụ <span className="text-[#CBA135]">Chăm Sóc Da Đầu</span>
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-zinc-300 max-w-2xl mx-auto px-4">
-              Từ cắt tóc cơ bản đến nhuộm, uốn, duỗi chuyên nghiệp. Chúng tôi
-              mang đến trải nghiệm hoàn hảo cho mái tóc của bạn.
+              Từ điều trị gàu, nấm đến kích thích mọc tóc tự nhiên. Chúng tôi
+              mang đến giải pháp toàn diện cho sức khỏe da đầu của bạn.
             </p>
           </motion.div>
         </div>
@@ -166,7 +166,7 @@ export default function ServicesPage() {
               Chưa Biết Chọn Dịch Vụ Nào?
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-zinc-300 mb-6 sm:mb-8 max-w-2xl mx-auto px-4">
-              Đặt lịch tư vấn miễn phí với stylist chuyên nghiệp của chúng tôi
+              Đặt lịch tư vấn miễn phí với chuyên gia da đầu của chúng tôi
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch px-4">
               <Button

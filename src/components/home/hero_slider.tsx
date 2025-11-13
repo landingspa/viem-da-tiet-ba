@@ -10,29 +10,27 @@ import Link from "next/link";
 const slides = [
   {
     id: 1,
-    title: "Uốn Sóng Hàn Quốc",
-    subtitle: "Phong cách nữ tính, cuốn hút",
-    description: "Tạo sóng tóc tự nhiên theo xu hướng K-beauty",
-    image:
-      "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=1920&q=80",
+    title: "Điều Trị Gàu Chuyên Sâu",
+    subtitle: "Giải pháp hiệu quả, bền vững",
+    description:
+      "Giảm gàu 90% chỉ sau 3-5 buổi điều trị với công nghệ hiện đại",
+    image: "/hero.jpg",
     cta: "Đặt Lịch Ngay",
   },
   {
     id: 2,
-    title: "Tóc Layer Tự Nhiên",
-    subtitle: "Năng động & cá tính",
-    description: "Nhiều tầng tạo độ phồng hoàn hảo",
-    image:
-      "https://images.unsplash.com/photo-1560869713-7d0a29430803?w=1920&q=80",
+    title: "Kích Thích Mọc Tóc Tự Nhiên",
+    subtitle: "Natural Volume - Tóc dày tự nhiên",
+    description: "Tăng độ dày tóc 40% với công nghệ PRP và thảo dược",
+    image: "/hero2.jpg",
     cta: "Khám Phá Ngay",
   },
   {
     id: 3,
-    title: "Tóc Nam Cá Tính",
-    subtitle: "Fade & Textured Crop",
-    description: "Phong cách hiện đại cho phái mạnh",
-    image:
-      "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=1920&q=80",
+    title: "Trị Nấm Da Đầu Hiệu Quả",
+    subtitle: "An toàn - Không tái phát",
+    description: "Liệu pháp ánh sáng xanh kết hợp serum sinh học",
+    image: "/hero3.jpg",
     cta: "Xem Dịch Vụ",
   },
 ];

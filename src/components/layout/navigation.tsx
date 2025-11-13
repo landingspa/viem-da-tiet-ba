@@ -50,8 +50,10 @@ function Navigation() {
               animate={{ opacity: 1, x: 0 }}
               className="text-2xl font-black tracking-tight"
             >
-              <span className="text-[#CBA135]">HAIR</span>
-              <span className="text-white">ZONE</span>
+              <span className="text-[#CBA135]" style={{ marginRight: "10px" }}>
+                Viêm Da
+              </span>
+              <span className="text-white">Tiết Bã</span>
             </motion.div>
           </Link>
 

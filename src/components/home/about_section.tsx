@@ -13,20 +13,20 @@ const stats = [
 
 const features = [
   {
-    title: "Đội Ngũ Chuyên Nghiệp",
-    description: "Stylist được đào tạo bài bản với chứng chỉ quốc tế",
+    title: "Đội Ngũ Chuyên Gia",
+    description: "Bác sĩ da liễu và chuyên viên được đào tạo bài bản",
   },
   {
-    title: "Không Gian Sang Trọng",
-    description: "Thiết kế hiện đại, thoáng mát và riêng tư",
+    title: "Công Nghệ Hiện Đại",
+    description: "Thiết bị điều trị tiên tiến nhập khẩu từ Hàn Quốc, Nhật Bản",
   },
   {
-    title: "Sản Phẩm Cao Cấp",
-    description: "Sử dụng thuốc nhuộm, uốn nhập khẩu từ Nhật, Hàn",
+    title: "Sản Phẩm Thiên Nhiên",
+    description: "Sử dụng thảo dược và serum sinh học an toàn",
   },
   {
-    title: "Tư Vấn Tận Tâm",
-    description: "Tư vấn kiểu tóc phù hợp với khuôn mặt và phong cách",
+    title: "Tư Vấn Chuyên Sâu",
+    description: "Phân tích da đầu camera, điều trị cá nhân hóa",
   },
 ];
 
@@ -46,18 +46,19 @@ export default function AboutSection() {
               VỀ CHÚNG TÔI
             </div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#111111] mb-4 sm:mb-6">
-              HairZone - Nơi Tạo Nên{" "}
-              <span className="text-[#CBA135]">Phong Cách</span>
+              Viêm Da Tiết Bã Đà Nẵng - Chăm Sóc Da Đầu{" "}
+              <span className="text-[#CBA135]">Chuyên Sâu</span>
             </h2>
             <p className="text-zinc-600 text-base sm:text-lg leading-relaxed mb-4 sm:mb-6">
-              Với hơn 10 năm kinh nghiệm trong ngành tóc thời trang, HairZone tự
-              hào là salon hàng đầu tại TP.HCM. Chúng tôi không chỉ cắt tóc, mà
-              còn tạo ra những tác phẩm nghệ thuật trên từng sợi tóc.
+              Với hơn 10 năm kinh nghiệm trong lĩnh vực chăm sóc da đầu, Viêm Da
+              Tiết Bã Đà Nẵng tự hào là trung tâm hàng đầu tại TP.HCM. Chúng tôi
+              chuyên điều trị các vấn đề về da đầu như gàu, nấm, ngứa và kích
+              thích mọc tóc tự nhiên.
             </p>
             <p className="text-zinc-600 text-base sm:text-lg leading-relaxed mb-6 sm:mb-8">
-              Đội ngũ stylist của chúng tôi liên tục cập nhật xu hướng mới nhất
-              từ các tuần lễ thời trang quốc tế, mang đến cho bạn những kiểu tóc
-              hiện đại và phù hợp nhất.
+              Đội ngũ chuyên gia của chúng tôi kết hợp y học hiện đại với liệu
+              pháp thảo dược tự nhiên, mang đến giải pháp toàn diện và bền vững
+              cho sức khỏe da đầu của bạn.
             </p>
 
             {/* Features Grid */}
@@ -121,16 +122,16 @@ export default function AboutSection() {
               <div className="space-y-3 sm:space-y-4">
                 <div className="relative h-48 sm:h-56 md:h-64 rounded-xl sm:rounded-2xl overflow-hidden">
                   <Image
-                    src="https://images.unsplash.com/photo-1560869713-7d0a29430803?w=600"
-                    alt="Salon interior"
+                    src="/hero.jpg"
+                    alt="Scalp treatment"
                     fill
                     className="object-cover hover:scale-110 transition-transform duration-500"
                   />
                 </div>
                 <div className="relative h-36 sm:h-40 md:h-48 rounded-xl sm:rounded-2xl overflow-hidden">
                   <Image
-                    src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600"
-                    alt="Hair styling"
+                    src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=600"
+                    alt="Scalp care therapy"
                     fill
                     className="object-cover hover:scale-110 transition-transform duration-500"
                   />
@@ -139,16 +140,16 @@ export default function AboutSection() {
               <div className="space-y-3 sm:space-y-4 pt-6 sm:pt-8">
                 <div className="relative h-36 sm:h-40 md:h-48 rounded-xl sm:rounded-2xl overflow-hidden">
                   <Image
-                    src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600"
-                    alt="Barber service"
+                    src="/hero2.jpg"
+                    alt="Professional scalp analysis"
                     fill
                     className="object-cover hover:scale-110 transition-transform duration-500"
                   />
                 </div>
                 <div className="relative h-48 sm:h-56 md:h-64 rounded-xl sm:rounded-2xl overflow-hidden">
                   <Image
-                    src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=600"
-                    alt="Salon experience"
+                    src="/hero3.jpg"
+                    alt="Spa experience"
                     fill
                     className="object-cover hover:scale-110 transition-transform duration-500"
                   />
