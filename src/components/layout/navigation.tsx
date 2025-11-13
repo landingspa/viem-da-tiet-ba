@@ -35,10 +35,10 @@ function Navigation() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-[#111111]/95 backdrop-blur-md shadow-lg"
+          ? "bg-white/95 backdrop-blur-md shadow-lg"
           : isHomePage
           ? "bg-transparent"
-          : "bg-[#111111]/95 backdrop-blur-md shadow-lg"
+          : "bg-white/95 backdrop-blur-md shadow-lg"
       }`}
     >
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -53,7 +53,13 @@ function Navigation() {
               <span className="text-[#6ba547]" style={{ marginRight: "10px" }}>
                 MOORE
               </span>
-              <span className="text-white">SPA</span>
+              <span
+                className={
+                  scrolled || !isHomePage ? "text-[#111111]" : "text-white"
+                }
+              >
+                SPA
+              </span>
             </motion.div>
           </Link>
 
@@ -68,7 +74,9 @@ function Navigation() {
               >
                 <Link
                   href={item.href}
-                  className="text-sm font-semibold text-white hover:text-[#6ba547] transition-colors"
+                  className={`text-sm font-semibold hover:text-[#6ba547] transition-colors ${
+                    scrolled || !isHomePage ? "text-[#111111]" : "text-white"
+                  }`}
                 >
                   {item.name}
                 </Link>
@@ -80,7 +88,9 @@ function Navigation() {
           <div className="hidden lg:flex lg:items-center lg:gap-4">
             <a
               href="tel:+84862803268"
-              className="flex items-center gap-2 text-sm text-white hover:text-[#6ba547] transition-colors"
+              className={`flex items-center gap-2 text-sm hover:text-[#6ba547] transition-colors ${
+                scrolled || !isHomePage ? "text-[#111111]" : "text-white"
+              }`}
             >
               <Phone className="h-4 w-4" />
               <span>0862.803.268</span>
@@ -93,7 +103,9 @@ function Navigation() {
           {/* Mobile menu button */}
           <button
             type="button"
-            className="lg:hidden rounded-md p-2 text-white hover:bg-white/10"
+            className={`lg:hidden rounded-md p-2 hover:bg-gray-100 ${
+              scrolled || !isHomePage ? "text-[#111111]" : "text-white"
+            }`}
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             <span className="sr-only">Open menu</span>
