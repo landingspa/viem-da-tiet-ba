@@ -89,6 +89,38 @@ export default function BookingPage() {
         throw new Error(data.error || "Có lỗi xảy ra khi gửi email");
       }
 
+      // Save to Google Sheet
+      try {
+        const sheetResponse = await fetch("/api/save-to-sheet", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name: formData.name,
+            phone: formData.phone,
+            email: formData.email || "",
+            service: selectedServiceData?.name || "",
+            servicePrice: selectedServiceData?.price || "",
+            serviceDuration: selectedServiceData?.duration || "",
+            date: formData.date,
+            time: formData.time,
+            notes: formData.notes || "",
+          }),
+        });
+
+        const sheetData = await sheetResponse.json();
+
+        if (sheetData.success) {
+          console.log("✅ Đã lưu vào Google Sheet");
+        } else {
+          console.warn("⚠️ Không lưu được vào Google Sheet:", sheetData.error);
+        }
+      } catch (sheetError) {
+        // Don't block the success flow if sheet save fails
+        console.error("Sheet save error (non-critical):", sheetError);
+      }
+
       // Show success modal
       setShowSuccess(true);
 
