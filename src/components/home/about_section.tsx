@@ -14,7 +14,7 @@ const stats = [
 const features = [
   {
     title: "Đội Ngũ Chuyên Gia",
-    description: "Bác sĩ da liễu và chuyên viên được đào tạo bài bản",
+    description: "Chuyên viên chăm sóc da đầu được đào tạo bài bản",
   },
   {
     title: "Công Nghệ Hiện Đại",
@@ -50,7 +50,7 @@ export default function AboutSection() {
               <span className="text-[#4a7c2e]">Chuyên Sâu</span>
             </h2>
             <p className="text-zinc-600 text-base sm:text-lg leading-relaxed mb-4 sm:mb-6">
-              Với hơn 10 năm kinh nghiệm trong lĩnh vực chăm sóc da đầu, MOORE
+              Với hơn 3 năm kinh nghiệm trong lĩnh vực chăm sóc da đầu, MOORE
               Spa Đà Nẵng tự hào là trung tâm hàng đầu tại Đà Nẵng. Chúng tôi
               chuyên điều trị các vấn đề về da đầu như gàu, nấm, ngứa và kích
               thích mọc tóc tự nhiên.

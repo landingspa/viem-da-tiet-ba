@@ -75,7 +75,7 @@ export default function BookingPage() {
           message: bookingMessage,
           subject: `Đặt lịch mới từ ${formData.name} - ${formData.date} ${formData.time}`,
           adminEmail:
-            process.env.NEXT_PUBLIC_ADMIN_EMAIL || "contact@moorespa.vn",
+            process.env.NEXT_PUBLIC_ADMIN_EMAIL || "Moorecentre2025@gmail.com",
           adminName: "MOORE Spa Đà Nẵng Admin",
           companyName: "MOORE Spa Đà Nẵng",
           projectName: "MOORE Spa - Chăm Sóc Da Đầu Chuyên Sâu",
@@ -369,7 +369,7 @@ export default function BookingPage() {
                     </div>
                     <div className="text-sm text-zinc-600 space-y-1">
                       <div>Hotline: 0862 803 268</div>
-                      <div>Email: contact@moorespa.vn</div>
+                      <div>Email: Moorecentre2025@gmail.com</div>
                     </div>
                   </div>
                 </CardContent>

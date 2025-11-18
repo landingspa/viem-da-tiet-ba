@@ -58,7 +58,7 @@ export default function PromoPopup() {
               {/* Close Button */}
               <button
                 onClick={handleClose}
-                className="absolute top-4 right-4 rounded-full bg-white/10 p-2 hover:bg-white/20 transition-colors"
+                className="absolute z-1000 top-4 right-4 rounded-full bg-white/10 p-2 hover:bg-white/20 transition-colors"
                 aria-label="Close"
               >
                 <X className="h-5 w-5 text-white" />
@@ -105,7 +105,7 @@ export default function PromoPopup() {
                   className="inline-flex items-center justify-center w-32 h-32 bg-[#4a7c2e] rounded-full mb-6 relative"
                 >
                   <div className="text-center">
-                    <div className="text-4xl font-black text-white">30%</div>
+                    <div className="text-4xl font-black text-white">10%</div>
                     <div className="text-xs font-bold text-white">GIẢM GIÁ</div>
                   </div>
                   {/* Pulse Effect */}

@@ -69,7 +69,7 @@ export default function PromotionBanner() {
                   GIẢM NGAY
                 </div>
                 <div className="text-white text-2xl sm:text-3xl font-black">
-                  30%
+                  10%
                 </div>
               </div>
             </div>
