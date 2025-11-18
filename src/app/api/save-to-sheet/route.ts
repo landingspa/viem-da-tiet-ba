@@ -15,7 +15,7 @@ export async function POST(request: NextRequest) {
     // Google Apps Script Web App URL
     const GOOGLE_SCRIPT_URL =
       process.env.GOOGLE_SHEET_SCRIPT_URL ||
-      "https://script.google.com/macros/s/AKfycbyZdzIblLfL_mHxNtX1gsf4LprVkDV4kqcDa_G1Xo_5DTDVn-YO59jOZbpEQBfg7TZdHQ/exec";
+      "https://script.google.com/macros/s/AKfycbw9vhiP4eLdxspjgUpd1jNLSby6VDZPq_wD9l8dRGd-u0arVNWUPwdC53a7Ypz9zLbfdA/exec";
 
     if (!GOOGLE_SCRIPT_URL) {
       console.warn("GOOGLE_SHEET_SCRIPT_URL not configured");
