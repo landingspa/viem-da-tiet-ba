@@ -50,15 +50,16 @@ export default function AboutSection() {
               <span className="text-[#4a7c2e]">Chuyên Sâu</span>
             </h2>
             <p className="text-zinc-600 text-base sm:text-lg leading-relaxed mb-4 sm:mb-6">
-              Với hơn 3 năm kinh nghiệm trong lĩnh vực chăm sóc da đầu, MOORE
-              Spa Đà Nẵng tự hào là trung tâm hàng đầu tại Đà Nẵng. Chúng tôi
-              chuyên điều trị các vấn đề về da đầu như gàu, nấm, ngứa và kích
-              thích mọc tóc tự nhiên.
+              Với hơn 3 năm kinh nghiệm trong lĩnh vực chăm sóc da đầu (Scalp
+              treatment, Hair treatment), MOORE Spa Đà Nẵng tự hào là trung tâm
+              hàng đầu tại Đà Nẵng. Chúng tôi chuyên điều trị các vấn đề về da
+              đầu như gàu, nấm, ngứa và kích thích mọc tóc tự nhiên.
             </p>
             <p className="text-zinc-600 text-base sm:text-lg leading-relaxed mb-6 sm:mb-8">
               Đội ngũ chuyên gia của chúng tôi kết hợp y học hiện đại với liệu
-              pháp thảo dược tự nhiên, mang đến giải pháp toàn diện và bền vững
-              cho sức khỏe da đầu của bạn.
+              pháp thảo dược tự nhiên trong các dịch vụ Hair treatment và Scalp
+              treatment, mang đến giải pháp toàn diện và bền vững cho sức khỏe
+              da đầu của bạn.
             </p>
 
             {/* Features Grid */}

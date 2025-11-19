@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description:
     "Viêm Da Tiết Bã - Trung tâm chăm sóc da đầu hàng đầu với đội ngũ bác sĩ và chuyên gia. Dịch vụ điều trị gàu, nấm, ngứa da đầu, kích thích mọc tóc Natural Volume. Đặt lịch ngay!",
   keywords:
-    "spa da đầu, chăm sóc da đầu, điều trị gàu, nấm da đầu, ngứa da đầu, kích thích mọc tóc, natural volume, scalp care, spa",
+    "spa da đầu, chăm sóc da đầu, điều trị gàu, nấm da đầu, ngứa da đầu, kích thích mọc tóc, natural volume, scalp care, spa, hair treatment, scalp treatment",
   openGraph: {
     title: "Viêm Da Tiết Bã - Chăm Sóc Da Đầu Chuyên Sâu",
     description:

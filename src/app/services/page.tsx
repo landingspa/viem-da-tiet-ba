@@ -34,8 +34,9 @@ export default function ServicesPage() {
               Dịch Vụ <span className="text-[#6ba547]">Chăm Sóc Da Đầu</span>
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-zinc-300 max-w-2xl mx-auto px-4">
-              Từ điều trị gàu, nấm đến kích thích mọc tóc tự nhiên. Chúng tôi
-              mang đến giải pháp toàn diện cho sức khỏe da đầu của bạn.
+              Từ điều trị gàu, nấm đến kích thích mọc tóc tự nhiên (Hair
+              treatment & Scalp treatment). Chúng tôi mang đến giải pháp toàn
+              diện cho sức khỏe da đầu của bạn.
             </p>
           </motion.div>
         </div>
