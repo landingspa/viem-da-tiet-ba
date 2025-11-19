@@ -14,7 +14,7 @@ const slides = [
     subtitle: "Giải pháp hiệu quả, bền vững",
     description:
       "Giảm gàu 90% chỉ sau 3-5 buổi điều trị với công nghệ hiện đại",
-    image: "/hero.jpg",
+    image: "/hero.png",
     cta: "Đặt Lịch Ngay",
   },
   {
@@ -22,7 +22,7 @@ const slides = [
     title: "Kích Thích Mọc Tóc Tự Nhiên",
     subtitle: "Natural Volume - Tóc dày tự nhiên",
     description: "Tăng độ dày tóc 40% với công nghệ PRP và thảo dược",
-    image: "/hero2.jpg",
+    image: "/hero2.png",
     cta: "Khám Phá Ngay",
   },
   {
@@ -30,7 +30,7 @@ const slides = [
     title: "Trị Nấm Da Đầu Hiệu Quả",
     subtitle: "An toàn - Không tái phát",
     description: "Liệu pháp ánh sáng xanh kết hợp serum sinh học",
-    image: "/hero3.jpg",
+    image: "/hero3.png",
     cta: "Xem Dịch Vụ",
   },
 ];

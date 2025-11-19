@@ -5,7 +5,7 @@ import { Award, Users, Clock, Star } from "lucide-react";
 import Image from "next/image";
 
 const stats = [
-  { icon: Award, label: "Năm Kinh Nghiệm", value: "10+" },
+  { icon: Award, label: "Năm Kinh Nghiệm", value: "3+" },
   { icon: Users, label: "Khách Hàng", value: "15K+" },
   { icon: Star, label: "Đánh Giá 5 Sao", value: "98%" },
   { icon: Clock, label: "Giờ Mở Cửa", value: "9-21" },
@@ -122,7 +122,7 @@ export default function AboutSection() {
               <div className="space-y-3 sm:space-y-4">
                 <div className="relative h-48 sm:h-56 md:h-64 rounded-xl sm:rounded-2xl overflow-hidden">
                   <Image
-                    src="/hero.jpg"
+                    src="/hero.png"
                     alt="Scalp treatment"
                     fill
                     className="object-cover hover:scale-110 transition-transform duration-500"
@@ -130,7 +130,7 @@ export default function AboutSection() {
                 </div>
                 <div className="relative h-36 sm:h-40 md:h-48 rounded-xl sm:rounded-2xl overflow-hidden">
                   <Image
-                    src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=600"
+                    src="https://plus.unsplash.com/premium_photo-1730126356229-559f3bd984ef?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="Scalp care therapy"
                     fill
                     className="object-cover hover:scale-110 transition-transform duration-500"
@@ -140,7 +140,7 @@ export default function AboutSection() {
               <div className="space-y-3 sm:space-y-4 pt-6 sm:pt-8">
                 <div className="relative h-36 sm:h-40 md:h-48 rounded-xl sm:rounded-2xl overflow-hidden">
                   <Image
-                    src="/hero2.jpg"
+                    src="/hero2.png"
                     alt="Professional scalp analysis"
                     fill
                     className="object-cover hover:scale-110 transition-transform duration-500"
@@ -148,7 +148,7 @@ export default function AboutSection() {
                 </div>
                 <div className="relative h-48 sm:h-56 md:h-64 rounded-xl sm:rounded-2xl overflow-hidden">
                   <Image
-                    src="/hero3.jpg"
+                    src="/hero3.png"
                     alt="Spa experience"
                     fill
                     className="object-cover hover:scale-110 transition-transform duration-500"
@@ -163,7 +163,7 @@ export default function AboutSection() {
               transition={{ duration: 3, repeat: Infinity }}
               className="absolute -bottom-4 sm:-bottom-6 -left-4 sm:-left-6 bg-[#4a7c2e] text-white p-4 sm:p-6 rounded-xl sm:rounded-2xl shadow-2xl"
             >
-              <div className="text-2xl sm:text-3xl font-black mb-1">10+</div>
+              <div className="text-2xl sm:text-3xl font-black mb-1">3+</div>
               <div className="text-xs sm:text-sm font-semibold">
                 Năm Kinh Nghiệm
               </div>
