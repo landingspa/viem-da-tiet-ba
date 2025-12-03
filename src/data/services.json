@@ -1,5 +1,18 @@
 [
   {
+    "id": "0",
+    "name": "Gội Sạch Sâu Máy Chăm Sóc Da Đầu",
+    "nameEn": "Deep Cleansing Scalp Care Machine",
+    "category": "cleansing",
+    "gender": "unisex",
+    "description": "Gội sạch sâu da đầu bằng máy chuyên dụng, loại bỏ bã nhờn và tế bào chết hiệu quả. Massage thư giãn kết hợp công nghệ hiện đại.",
+    "price": "99.000đ/20 phút",
+    "duration": "20 phút",
+    "image": "https://medlatec.vn/media/10310/content/20210708_nguyen-nhan-gay-ngua-da-dau-1.jpg",
+    "tag": "New",
+    "features": ["Làm sạch sâu", "Massage thư giãn", "Công nghệ hiện đại"]
+  },
+  {
     "id": "2",
     "name": "Gội Trị Liệu Gàu",
     "nameEn": "Dandruff Treatment Wash",
@@ -136,18 +149,5 @@
     "image": "https://thainguyenmedical.com/wp-content/uploads/2024/08/viem-da-tiet-ba-da-dau-4-.jpg",
     "tag": "Best Seller",
     "features": ["Điều trị viêm da", "Giảm ngứa đỏ", "Phục hồi da đầu"]
-  },
-  {
-    "id": "12",
-    "name": "Gội Sạch Sâu Máy Chăm Sóc Da Đầu",
-    "nameEn": "Deep Cleansing Scalp Care Machine",
-    "category": "cleansing",
-    "gender": "unisex",
-    "description": "Gội sạch sâu da đầu bằng máy chuyên dụng, loại bỏ bã nhờn và tế bào chết hiệu quả. Massage thư giãn kết hợp công nghệ hiện đại.",
-    "price": "99.000đ/20 phút",
-    "duration": "20 phút",
-    "image": "https://medlatec.vn/media/10310/content/20210708_nguyen-nhan-gay-ngua-da-dau-1.jpg",
-    "tag": "New",
-    "features": ["Làm sạch sâu", "Massage thư giãn", "Công nghệ hiện đại"]
   }
 ]
