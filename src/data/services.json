@@ -1,22 +1,5 @@
 [
   {
-    "id": "1",
-    "name": "Gội Thông Kinh Lạc Đầu",
-    "nameEn": "Stress Relief Head Massage & Wash",
-    "category": "basic",
-    "gender": "unisex",
-    "description": "Gội thông kinh lạc đầu giúp giảm stress, mệt mỏi, đau đầu gáy. Massage thư giãn kết hợp với serum thảo dược tự nhiên.",
-    "price": "199.000đ",
-    "duration": "45 phút",
-    "image": "/dieutrigau.jpg",
-    "tag": "Best Seller",
-    "features": [
-      "Giảm stress, mệt mỏi",
-      "Massage đầu thư giãn",
-      "Thảo dược tự nhiên"
-    ]
-  },
-  {
     "id": "2",
     "name": "Gội Trị Liệu Gàu",
     "nameEn": "Dandruff Treatment Wash",
@@ -25,7 +8,7 @@
     "description": "Gội trị liệu gàu cho da đầu bị kiểm dầu, gàu ít, gàu liti mảng nhỏ, kô viêm. Làm sạch da đầu và giảm gàu hiệu quả.",
     "price": "150.000đ",
     "duration": "30 phút",
-    "image": "https://trungtamthuocdantoc.com/wp-content/uploads/2022/10/gau-va-nam-da-dau-1.jpg",
+    "image": "https://assets.unileversolutions.com/v1/134171679.jpg",
     "tag": "",
     "features": ["Kiểm soát dầu nhờn", "Giảm gàu ít", "Làm sạch da đầu"]
   },
@@ -38,7 +21,7 @@
     "description": "Gội trị gàu chuyên sâu cho tình trạng gàu nhiều, mảng to. Điều trị chuyên sâu với công nghệ hiện đại.",
     "price": "300.000đ",
     "duration": "60 phút",
-    "image": "/dieutrigau.jpg",
+    "image": "https://www.daugoicaocap.vn/Upload/Editor/2021/3/20/daugoitrigautotnhat1-86e8.jpg",
     "tag": "Hot Trend",
     "features": ["Điều trị gàu nhiều", "Xử lý mảng to", "Công nghệ hiện đại"]
   },
@@ -114,5 +97,57 @@
     "image": "https://trungtamdalieuhaiphong.vn/upload/1001915/fck/files/2024_10_23_07_51_491_345d3.png",
     "tag": "Premium",
     "features": ["Giảm rụng tóc", "Kích thích mọc tóc", "Tăng độ dày tóc"]
+  },
+  {
+    "id": "9",
+    "name": "Giảm Rụng Chắc Nang",
+    "nameEn": "Hair Loss Prevention & Follicle Strengthening",
+    "category": "growth",
+    "gender": "unisex",
+    "description": "Liệu trình giảm rụng tóc và chắc nang, giúp tóc khỏe mạnh từ gốc. Củng cố nang tóc và ngăn ngừa rụng tóc hiệu quả.",
+    "price": "1.800.000đ",
+    "duration": "90 phút",
+    "image": "https://cdn.tgdd.vn/Files/2021/03/13/1334919/diem-danh-17-loai-dau-goi-ngan-rung-toc-cho-nam-gioi-tot-nhat-hien-nay-202202151558048027.jpg",
+    "tag": "",
+    "features": ["Giảm rụng tóc", "Chắc nang tóc", "Tăng cường sức khỏe tóc"]
+  },
+  {
+    "id": "10",
+    "name": "Kích Mọc Tóc",
+    "nameEn": "Hair Growth Stimulation",
+    "category": "growth",
+    "gender": "unisex",
+    "description": "Liệu trình kích thích mọc tóc chuyên biệt, giúp tóc mọc nhanh và dày hơn. Phù hợp cho người bị thưa tóc hoặc muốn tóc dày hơn.",
+    "price": "2.000.000đ",
+    "duration": "90 phút",
+    "image": "https://tiemgoldmen.com/wp-content/uploads/2020/03/cach-moc-toc-nhanh-trong-mot-tuan-cho-nam.jpg",
+    "tag": "Hot Trend",
+    "features": ["Kích thích mọc tóc", "Tăng độ dày tóc", "Tóc mọc nhanh hơn"]
+  },
+  {
+    "id": "11",
+    "name": "Điều Trị Viêm Da Tiết Bã",
+    "nameEn": "Seborrheic Dermatitis Treatment",
+    "category": "treatment",
+    "gender": "unisex",
+    "description": "Điều trị chuyên sâu viêm da tiết bã, giảm ngứa, đỏ và viêm da đầu. Liệu pháp y học chuyên biệt cho da đầu nhạy cảm.",
+    "price": "1.500.000đ",
+    "duration": "90 phút",
+    "image": "https://icarepharma.com.vn/wp-content/uploads/2021/07/5fa6c1019ad1b458cc6c8af2_viem-da-tiet-ba.jpg",
+    "tag": "Best Seller",
+    "features": ["Điều trị viêm da", "Giảm ngứa đỏ", "Phục hồi da đầu"]
+  },
+  {
+    "id": "12",
+    "name": "Gội Sạch Sâu Máy Chăm Sóc Da Đầu",
+    "nameEn": "Deep Cleansing Scalp Care Machine",
+    "category": "cleansing",
+    "gender": "unisex",
+    "description": "Gội sạch sâu da đầu bằng máy chuyên dụng, loại bỏ bã nhờn và tế bào chết hiệu quả. Massage thư giãn kết hợp công nghệ hiện đại.",
+    "price": "99.000đ/20 phút",
+    "duration": "20 phút",
+    "image": "https://medlatec.vn/media/10310/content/20210708_nguyen-nhan-gay-ngua-da-dau-1.jpg",
+    "tag": "New",
+    "features": ["Làm sạch sâu", "Massage thư giãn", "Công nghệ hiện đại"]
   }
 ]

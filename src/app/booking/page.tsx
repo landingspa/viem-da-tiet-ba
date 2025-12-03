@@ -209,7 +209,7 @@ export default function BookingPage() {
                         Chọn Dịch Vụ <span className="text-red-500">*</span>
                       </label>
                       <div className="grid sm:grid-cols-2 gap-2 sm:gap-3">
-                        {services.slice(0, 6).map((service) => (
+                        {services.map((service) => (
                           <button
                             key={service.id}
                             type="button"
