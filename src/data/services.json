@@ -5,7 +5,7 @@
     "nameEn": "Dandruff Treatment Wash",
     "category": "dandruff",
     "gender": "unisex",
-    "description": "Gội trị liệu gàu cho da đầu bị kiểm dầu, gàu ít, gàu liti mảng nhỏ, kô viêm. Làm sạch da đầu và giảm gàu hiệu quả.",
+    "description": "Gội trị liệu gàu cho da đầu bị bết dầu, gàu ít, gàu liti mảng nhỏ, kô viêm. Làm sạch da đầu và giảm gàu hiệu quả.",
     "price": "150.000đ",
     "duration": "30 phút",
     "image": "https://assets.unileversolutions.com/v1/134171679.jpg",
@@ -47,7 +47,7 @@
     "description": "Thải độc tố chuyên sâu với liệu trình toàn diện, kết hợp massage và serum đặc biệt. Phục hồi da đầu tổng thể.",
     "price": "1.000.000đ",
     "duration": "90 phút",
-    "image": "https://icarepharma.com.vn/wp-content/uploads/2021/07/5fa6c1019ad1b458cc6c8af2_viem-da-tiet-ba.jpg",
+    "image": "/dadau.jpg",
     "tag": "Best Seller",
     "features": [
       "Liệu trình toàn diện",
